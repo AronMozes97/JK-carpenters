@@ -1,10 +1,10 @@
 import './bootstrap';
 
 import {createApp} from "vue";
-import vuetify from "./plugins/vuetify.js";
+import vuetify from './plugins/vuetify';
 
 import {createPinia} from "pinia";
-import {useLanguageStore} from "./stores/languages.js";
+import {useLanguageStore} from "./stores/languages";
 import {createI18n} from "vue-i18n";
 
 import HU from './local/hu.json'
