@@ -9,6 +9,9 @@ import Footer from "@/components/layout/Footer.vue";
     </header>
 
     <RouterView/>
+
+    <v-btn @click="$i18n.local = 'EN'">asd</v-btn>
+
     <footer>
         <Footer/>
     </footer>

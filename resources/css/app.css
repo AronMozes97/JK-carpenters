@@ -2,3 +2,8 @@ body{
     background-color: #1a202c;
     color: white;
 }
+
+/* NAVBAR */
+.dropdown-menu{
+    --bs-dropdown-min-width: auto;
+}
