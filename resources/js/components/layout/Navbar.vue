@@ -1,5 +1,8 @@
 <script setup>
+import { getCurrentLanguage } from '../../stores/languages';
 </script>
+
+
 <template>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -43,21 +46,28 @@
                             </RouterLink>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                               aria-expanded="false">
-                                {{ $t('HU') }}
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                {{ getCurrentLanguage($i18n.locale, 0) }}
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu language-change">
                                 <li>
-                                    <a class="dropdown-item d-flex w-auto" @click="$i18n.local = `SK`">{{ $t('SK') }}</a>
+                                    <a class="dropdown-item" @click="$i18n.locale = getCurrentLanguage($i18n.locale, 1)">
+                                        {{ getCurrentLanguage($i18n.locale, 1) }}
+                                    </a>
                                 </li>
-                                <li><a class="dropdown-item d-flex w-auto" href="#">{{ $t('EN')}}</a></li>
+                                <li>
+                                    <a class="dropdown-item" @click="$i18n.locale = getCurrentLanguage($i18n.locale, 2)">
+                                        {{ getCurrentLanguage($i18n.locale, 2) }}
+                                    </a>
+                                </li>
                             </ul>
                         </li>
+
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
+    <div></div>  <!-- Access the first element -->
 </template>
 

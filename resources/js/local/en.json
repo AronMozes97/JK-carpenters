@@ -5,5 +5,10 @@
     "assembly": "Assembly",
     "references": "References",
     "gallery": "Gallery",
-    "contacts": "Contacts"
+    "contacts": "Contacts",
+    "languages": {
+        "EN": "English",
+        "SK": "Slovak",
+        "HU": "Hungarian"
+    }
 }

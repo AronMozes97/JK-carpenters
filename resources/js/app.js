@@ -22,6 +22,7 @@ app.use(createPinia());
 const languages = useLanguageStore();
 
 const i18n = createI18n({
+    legacy: false,
     locale: languages.locale,
     messages: {
         HU: HU,

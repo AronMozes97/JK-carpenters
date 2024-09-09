@@ -1,9 +1,41 @@
-body{
-    background-color: #1a202c;
-    color: white;
+:root {
+    --color-white: #F5F5F5;
+    --color-charcoal-black: #333333;
+    --color-gray: #4A4A4A;
+    --color-olive: #6E6548;
+    --color--orange: #A45D42;
 }
+
+/* Example usage */
+body {
+    background-color: var(--color-white);
+    color: var(--color-charcoal-black);
+}
+
+h1, h2, h3 {
+    color: var(--color--orange);
+}
+
+a {
+    color: var(--color-olive);
+}
+
+footer {
+    background-color: var(--color-gray);
+}
+
 
 /* NAVBAR */
 .dropdown-menu{
     --bs-dropdown-min-width: auto;
 }
+
+.dropdown-menu .dropdown-item{
+    cursor: pointer;
+}
+
+.dropdown-menu .dropdown-item:active{
+    background-color: transparent;
+    color: var(--color--orange);
+}
+
