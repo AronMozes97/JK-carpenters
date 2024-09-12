@@ -13,7 +13,7 @@ import EN from './local/en.json'
 
 import App from "./components/App.vue";
 
-import router from "./router/index.js";
+import router from "./router/router.js";
 
 const app = createApp(App).use(vuetify);
 
