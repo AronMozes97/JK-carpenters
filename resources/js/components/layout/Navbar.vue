@@ -41,7 +41,7 @@ import { getCurrentLanguage } from '../../stores/languages';
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <RouterLink :to="{name: 'home'}" class="nav-link">
+                            <RouterLink :to="{name: 'contacts'}" class="nav-link">
                                 {{ $t('contacts') }}
                             </RouterLink>
                         </li>
@@ -68,6 +68,5 @@ import { getCurrentLanguage } from '../../stores/languages';
             </div>
         </div>
     </nav>
-    <div></div>  <!-- Access the first element -->
 </template>
 

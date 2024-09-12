@@ -10,6 +10,8 @@
 body {
     background-color: var(--color-white);
     color: var(--color-charcoal-black);
+    width: auto;
+    height: 100%;
 }
 
 h1, h2, h3 {
@@ -22,6 +24,11 @@ a {
 
 footer {
     background-color: var(--color-gray);
+}
+
+.container{
+    background-color: black;
+    width: 100%;
 }
 
 
