@@ -1,48 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap');
+
 :root {
-    --color-white: #F5F5F5;
-    --color-charcoal-black: #333333;
-    --color-gray: #4A4A4A;
-    --color-olive: #6E6548;
+    --color-white: #FAFAFA; /* First color (white) */
+    --color-light-gray: #FFFFFF; /* Second color (light gray) */
+    --color-gray: #DCDCDC; /* Third color (medium gray) */
+    --color-dark-gray: #1C1C1C; /* Fourth color (dark gray) */
+    --color-black: #000000; /* Fifth color (black) */
     --color--orange: #A45D42;
 }
 
 /* Example usage */
 body {
     background-color: var(--color-white);
-    color: var(--color-charcoal-black);
     width: auto;
     height: 100%;
-}
-
-h1, h2, h3 {
-    color: var(--color--orange);
-}
-
-a {
-    color: var(--color-olive);
+    font-family: "Noto Sans", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 footer {
     background-color: var(--color-gray);
 }
 
-.container{
-    background-color: black;
-    width: 100%;
+/* NAVBAR */
+.navbar{
+    --bs-navbar-padding-y: 1rem
 }
 
-
-/* NAVBAR */
-.dropdown-menu{
+.dropdown-menu {
     --bs-dropdown-min-width: auto;
 }
 
-.dropdown-menu .dropdown-item{
+.dropdown-menu .dropdown-item {
     cursor: pointer;
 }
 
-.dropdown-menu .dropdown-item:active{
+.dropdown-menu .dropdown-item:active {
     background-color: transparent;
     color: var(--color--orange);
 }
 
+.nav-link:focus, .nav-link:hover{
+    color: var(--color--orange);
+}
+
+/* HOME */
+
+.home-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 500px;
+    background-image: url('../../public/img/header-bg.jpg');
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+}
+
+.header-text{
+    width: 60%;
+    color: var(--color-white);
+    font-weight: 650;
+    font-size: 1.75rem;
+    border-left: 0.2rem solid var(--color-gray);
+}
+
+/* Contacts */
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,5 +1,7 @@
 <script setup>
 </script>
 <template>
-    <h1> :) asd en leszek a <contacts/></h1>
+    <div class="contacts">
+        <h3>asd</h3>
+    </div>
 </template>
