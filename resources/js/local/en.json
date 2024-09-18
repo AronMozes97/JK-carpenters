@@ -6,9 +6,11 @@
     "references": "References",
     "gallery": "Gallery",
     "contacts": "Contacts",
-    "languages": {
-        "EN": "English",
-        "SK": "Slovak",
-        "HU": "Hungarian"
-    }
+    "homeHeaderText" : "<p>JK-Carpenters creates custom,</p>\n<p>high-quality furniture and woodwork solutions.</p>\n<p>We bring your vision to life with expert craftsmanship</p>",
+    "custom_furniture": "Custom furniture",
+    "custom_furniture_text": "carpentry, joinery, kitchen furniture, living room furniture, sliding door wardrobes, wardrobes, office furniture, bathroom furniture, built-in wardrobes, children's room furniture, shelving systems, doors and windows.",
+    "interior_joinery": "Interior joinery",
+    "interior_joinery_text": "Complete custom interior carpentry services (survey, custom furniture design, production, delivery, installation) with our expert craftsmen, tailored to individual needs.",
+    "quality_guaranteed": "Quality guaranteed",
+    "quality_guaranteed_text": "We provide multi-year warranties on our furniture, ensuring premium quality. We do not use low-quality materials typically found in the carpentry industry."
 }

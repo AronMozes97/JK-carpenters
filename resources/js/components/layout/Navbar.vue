@@ -6,7 +6,9 @@ import { getCurrentLanguage } from '../../stores/languages';
 <template>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <RouterLink :to="{name: 'home'}" class="navbar-brand">
+                JK-carpenters
+            </RouterLink>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
