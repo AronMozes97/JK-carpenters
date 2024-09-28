@@ -14,19 +14,21 @@ import CarouselElement from "./homeCarousel/CarouselElement.vue";
             </div>
         </div>
         <div class="home-profile">
-            <h1>Main profile</h1>
-            <div class="carousel-container">
-                <transition-group name="carousel" tag="div" class="carousel-container">
-                    <CarouselElement v-for="(item, index) in content" :key="index" :data="item"
-                                     :class="{ 'small-element': index !== 1, 'big-element': index === 1 }"
-                    @click="handleClick(index)"/>
-                </transition-group>
+            <h1>{{ $t('mainProfile.label') }}</h1>
+            <div class="main-profile-wrapper">
+
+                    <!-- Main content, with v-for loop -->
+                    <CarouselElement
+                        v-for="(item, index) in content"
+                        :key="index"
+                        :data="item"
+                    />
             </div>
         </div>
     </div>
+
 </template>
 <script>
-
 export default {
     data() {
         return {
@@ -35,35 +37,44 @@ export default {
             content: [
                 {
                     id: 0,
-                    label: 'custom_furniture',
-                    text: 'custom_furniture_text',
-                    img: '/img/1.png'
+                    name: 'custom_furniture',
+                    img: 'https://picsum.photos/id/1/375/400'
                 },
                 {
                     id: 1,
-                    label: 'interior_joinery',
-                    text: 'interior_joinery_text',
-                    img: '/img/2.png'
+                    name: 'interior_joinery',
+                    img: 'https://picsum.photos/id/2/375/400'
                 },
                 {
                     id: 2,
-                    label: 'quality_guaranteed',
-                    text: 'quality_guaranteed_text',
-                    img: '/img/3.png'
+                    name: 'quality_guaranteed',
+                    img: 'https://picsum.photos/id/3/375/400'
                 }
             ]
         };
     },
     methods: {
         handleClick(index) {
-            console.table(index)
-            // Rotate the array based on the clicked index
+            let gallery = $('.main-profile-gallery');
             if (index === 0) {
-                this.content.unshift(this.content.pop()); // Move the right one to the left
+                gallery.scrollLeft(-350 - (20 * 4));
+                /*this.content.unshift(this.content.pop());*/
             } else if (index === 2) {
-                this.content.push(this.content.shift()); // Move the left one to the right
+                gallery.scrollLeft(800 + (20 * 4));
             }
+        },
+        getContentForRightItem(index) {
+            console.log(index);
+            return this.content;
         }
-    }
+    },
+    computed: {
+        leftItem() {
+            return this.content[this.content.length - 1];
+        },
+        rightItem() {
+            return this.content[0];
+        }
+    },
 }
 </script>

@@ -6,5 +6,22 @@
     "references": "Referenciák",
     "gallery": "Galéria",
     "contacts": "Kapcsolatok",
-    "homeHeaderText": "<p>A JK-Carpenters egyedi, kiváló minőségű </p>\n<p> bútorokat és asztalos megoldásokat készít.</p>\n<p>Szakértelemmel valósítjuk meg az elképzeléseit.</p>"
+
+    "homeHeaderText": "<p>A JK-Carpenters egyedi, kiváló minőségű </p>\n<p> bútorokat és asztalos megoldásokat készít.</p>\n<p>Szakértelemmel valósítjuk meg az elképzeléseit.</p>",
+
+    "mainProfile": {
+        "label": "Fő profilunk",
+        "custom_furniture": {
+            "label": "Egyedi bútorok",
+            "text": "Bútorasztalos, asztalos munkák, konyhabútor, nappali bútorok, tolóajtós szekrények, gardróbok, irodabútor, fürdőszoba bútor, beépített szekrények, gyerekszoba bútor, polcrendszerek, nyílászárók."
+        },
+        "interior_joinery": {
+            "label": "Belsőépítészeti asztalos munkák",
+            "text": "Belsőépítészeti asztalos munkák teljes körű kivitelezése (felmérés, egyedi bútortervezés, gyártás, szállítás, helyszíni szerelés) asztalos szakembereink együttműködésével egyedi igények szerint."
+        },
+        "quality_guaranteed": {
+            "label": "Minőségi Garancia",
+            "text": "Az elkészült bútorainkra több év garanciát vállalunk, ezzel is igazolva minőségét. Az asztalos iparban előforduló gyenge minőségű alapanyagokat nem használunk."
+        }
+    }
 }

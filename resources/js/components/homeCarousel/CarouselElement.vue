@@ -7,15 +7,15 @@ const props = defineProps({
         required: true,
     },
 });
-
-
 </script>
 
 <template>
-        <div class="element">
-            <img :src="data['img']" alt="Placeholder" width="350" height="200">
-            <h1 class="h1">{{ $t(data['label']) }}</h1>
-            {{ $t(data['text']) }}
-        </div>
+    <div class="element">
+        <img :src="data['img']" alt="Placeholder" width="375" height="400">
+        <div class="h3">{{ $t('mainProfile.' + data['name'] + '.label') }}</div>
+        <p>
+            {{ $t('mainProfile.' + data['name'] + '.text') }}
+        </p>
+    </div>
 </template>
 
