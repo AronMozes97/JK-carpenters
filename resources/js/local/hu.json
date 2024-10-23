@@ -1,27 +1,55 @@
 {
-    "about": "Rólunk",
-    "workshop": "Műhely",
-    "manufacture": "Gyártás",
-    "assembly": "Összeszerelés",
-    "references": "Referenciák",
-    "gallery": "Galéria",
-    "contacts": "Kapcsolatok",
+    "navbar" : {
+        "about": "Rólunk",
+        "workshop": "Műhely",
+        "manufacture": "Gyártás",
+        "assembly": "Összeszerelés",
+        "references": "Referenciák",
+        "gallery": "Galéria",
+        "contacts": "Kapcsolatok"
+    },
 
-    "homeHeaderText": "<p>A JK-Carpenters egyedi, kiváló minőségű </p>\n<p> bútorokat és asztalos megoldásokat készít.</p>\n<p>Szakértelemmel valósítjuk meg az elképzeléseit.</p>",
-
-    "mainProfile": {
-        "label": "Fő profilunk",
-        "custom_furniture": {
-            "label": "Egyedi bútorok",
-            "text": "Bútorasztalos, asztalos munkák, konyhabútor, nappali bútorok, tolóajtós szekrények, gardróbok, irodabútor, fürdőszoba bútor, beépített szekrények, gyerekszoba bútor, polcrendszerek, nyílászárók."
-        },
-        "interior_joinery": {
-            "label": "Belsőépítészeti asztalos munkák",
-            "text": "Belsőépítészeti asztalos munkák teljes körű kivitelezése (felmérés, egyedi bútortervezés, gyártás, szállítás, helyszíni szerelés) asztalos szakembereink együttműködésével egyedi igények szerint."
-        },
-        "quality_guaranteed": {
-            "label": "Minőségi Garancia",
-            "text": "Az elkészült bútorainkra több év garanciát vállalunk, ezzel is igazolva minőségét. Az asztalos iparban előforduló gyenge minőségű alapanyagokat nem használunk."
+    "footer" : {
+        "businessInfo": {
+            "label": {
+                "name": "Cégnév",
+                "seat": "Székhely",
+                "identificationNumber": "Identifikációs szám (IČO)",
+                "taxNumber": "Adószám (IČ DPH)",
+                "companyRegistrationNumber": "Cégjegyzékszám",
+                "office": "Telephely"
+            },
+            "text": {
+                "name": "JK Carpenters s.r.o",
+                "seat": "ul. kráľa Žigmunda 5869/25.\n Dunajská Streda 929 01",
+                "identificationNumber": "50 249 011",
+                "taxNumber": "2120244995",
+                "companyRegistrationNumber": "OR OS Trnava, odd. s.r.o, vložka č. 37438/T",
+                "office": "PPD Trhové Mýto, Dolnobarská 407.930 13 Trhová Hradská"
+            }
         }
+    },
+
+    "/home":  {
+        "homeHeaderText": "<p>A JK-Carpenters egyedi, kiváló minőségű </p>\n<p> bútorokat és asztalos megoldásokat készít.</p>\n<p>Szakértelemmel valósítjuk meg az elképzeléseit.</p>",
+        "mainProfile": {
+            "label": "Fő profilunk",
+            "custom_furniture": {
+                "label": "Egyedi bútorok",
+                "text": "Bútorasztalos, asztalos munkák, konyhabútor, nappali bútorok, tolóajtós szekrények, gardróbok, irodabútor, fürdőszoba bútor, beépített szekrények, gyerekszoba bútor, polcrendszerek, nyílászárók."
+            },
+            "interior_joinery": {
+                "label": "Belsőépítészeti asztalos munkák",
+                "text": "Belsőépítészeti asztalos munkák teljes körű kivitelezése (felmérés, egyedi bútortervezés, gyártás, szállítás, helyszíni szerelés) asztalos szakembereink együttműködésével egyedi igények szerint."
+            },
+            "quality_guaranteed": {
+                "label": "Minőségi Garancia",
+                "text": "Az elkészült bútorainkra több év garanciát vállalunk, ezzel is igazolva minőségét. Az asztalos iparban előforduló gyenge minőségű alapanyagokat nem használunk."
+            }
+        }
+    },
+
+    "/contacts": {
+        "label" : "asd"
     }
 }

@@ -1,5 +1,6 @@
 <script setup>
-import { getCurrentLanguage } from '../../stores/languages';
+import {getCurrentLanguage} from '../../stores/languages';
+import verticalLine from '../smallElements/VerticalLine.vue'
 </script>
 
 
@@ -19,46 +20,53 @@ import { getCurrentLanguage } from '../../stores/languages';
                     <ul class="navbar-nav me-0 mb-2 mb-lg-0">
                         <li class="nav-item">
                             <RouterLink :to="{name: 'home'}" class="nav-link">
-                                {{ $t('about') }}
+                                {{ $t('navbar.about') }}
                             </RouterLink>
                         </li>
+                        <vertical-line/>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                aria-expanded="false">
-                                {{ $t('workshop') }}
+                                {{ $t('navbar.workshop') }}
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">{{ $t('manufacture') }}</a></li>
-                                <li><a class="dropdown-item" href="#">{{ $t('assembly')}}</a></li>
+                                <li><a class="dropdown-item" href="#">{{ $t('navbar.manufacture') }}</a></li>
+                                <li><a class="dropdown-item" href="#">{{ $t('navbar.assembly') }}</a></li>
                             </ul>
                         </li>
+                        <vertical-line/>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                aria-expanded="false">
-                                {{ $t('vlm') }}
+                                {{ $t('navbar.vlm') }}
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">{{ $t('references') }}</a></li>
-                                <li><a class="dropdown-item" href="#">{{ $t('gallery')}}</a></li>
+                                <li><a class="dropdown-item" href="#">{{ $t('navbar.references') }}</a></li>
+                                <li><a class="dropdown-item" href="#">{{ $t('navbar.gallery') }}</a></li>
                             </ul>
                         </li>
+                        <vertical-line/>
                         <li class="nav-item">
                             <RouterLink :to="{name: 'contacts'}" class="nav-link">
-                                {{ $t('contacts') }}
+                                {{ $t('navbar.contacts') }}
                             </RouterLink>
                         </li>
+                        <vertical-line/>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
                                 {{ getCurrentLanguage($i18n.locale, 0) }}
                             </a>
                             <ul class="dropdown-menu language-change">
                                 <li>
-                                    <a class="dropdown-item" @click="$i18n.locale = getCurrentLanguage($i18n.locale, 1)">
+                                    <a class="dropdown-item"
+                                       @click="$i18n.locale = getCurrentLanguage($i18n.locale, 1)">
                                         {{ getCurrentLanguage($i18n.locale, 1) }}
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" @click="$i18n.locale = getCurrentLanguage($i18n.locale, 2)">
+                                    <a class="dropdown-item"
+                                       @click="$i18n.locale = getCurrentLanguage($i18n.locale, 2)">
                                         {{ getCurrentLanguage($i18n.locale, 2) }}
                                     </a>
                                 </li>
@@ -71,4 +79,54 @@ import { getCurrentLanguage } from '../../stores/languages';
         </div>
     </nav>
 </template>
+<style scoped>
+.navbar {
+    --bs-navbar-padding-y: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: transparent !important;
+    z-index: 1000;
+    padding: 0 20px;
+}
 
+.navbar-nav li a{
+    color: var(--color-white);
+}
+
+.dropdown-menu {
+    --bs-dropdown-min-width: auto;
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-menu .dropdown-item {
+    cursor: pointer;
+}
+
+.dropdown-menu .dropdown-item a{
+    color: var(--color-white);
+}
+
+.dropdown-menu .dropdown-item:active {
+    color: var(--color-dark-gray);
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: transparent;
+    color: var(--color-dark-gray);
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: var(--color-dark-gray);
+}
+
+.navbar-brand {
+    padding-left: 1%;
+    font-weight: 700;
+    font-size: 1.35rem;
+    color: var(--color-white);
+}
+</style>

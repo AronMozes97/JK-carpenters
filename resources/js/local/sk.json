@@ -1,11 +1,51 @@
 {
-    "about": "O nás",
-    "workshop": "Dielňa",
-    "manufacture": "Výroba",
-    "assembly": "Montáž",
-    "references": "Referencie",
-    "gallery": "Galéria",
-    "contacts": "Kontakty",
-    "homeHeaderText": "<p>JK-Carpenters vytvára na mieru,</p>\n<p>vysokokvalitné nábytkové a stolárske riešenia.</p>\n<p>Prinášame vaše predstavy k životu s</p>\n<p> odborným remeselným spracovaním.</p>"
+    "navbar" : {
+        "about": "O nás",
+        "workshop": "Dielňa",
+        "manufacture": "Výroba",
+        "assembly": "Montáž",
+        "references": "Referencie",
+        "gallery": "Galéria",
+        "contacts": "Kontakty"
+    },
 
+    "footer" : {
+        "businessInfo": {
+            "label": {
+                "name": "Názov spoločnosti",
+                "seat": "Sídlo",
+                "identificationNumber": "Identifikačné číslo (IČO)",
+                "taxNumber": "DIČ (IČ DPH)",
+                "companyRegistrationNumber": "Číslo obchodného registra",
+                "office": "Prevádzka"
+            },
+            "text": {
+                "name": "JK Carpenters s.r.o",
+                "seat": "ul. kráľa Žigmunda 5869/25.\n Dunajská Streda 929 01",
+                "identificationNumber": "50 249 011",
+                "taxNumber": "2120244995",
+                "companyRegistrationNumber": "OR OS Trnava, odd. s.r.o, vložka č. 37438/T",
+                "office": "PPD Trhové Mýto, Dolnobarská 407.930 13 Trhová Hradská"
+            }
+        }
+    },
+
+    "/home":  {
+        "homeHeaderText": "<p>JK-Carpenters vyrába vysoko kvalitný </p>\n<p> nábytok a stolárske riešenia na mieru.</p>\n<p>S odbornými znalosťami realizujeme vaše predstavy.</p>",
+        "mainProfile": {
+            "label": "Náš hlavný profil",
+            "custom_furniture": {
+                "label": "Nábytok na mieru",
+                "text": "Stolárske práce, kuchynský nábytok, obývací nábytok, skrine s posuvnými dverami, šatníky, kancelársky nábytok, kúpeľňový nábytok, vstavané skrine, detský nábytok, policové systémy, okná a dvere."
+            },
+            "interior_joinery": {
+                "label": "Interiérové stolárske práce",
+                "text": "Kompletná realizácia interiérových stolárskych prác (zameranie, návrh nábytku na mieru, výroba, doprava, montáž) v spolupráci s našimi odbornými stolármi podľa individuálnych potrieb."
+            },
+            "quality_guaranteed": {
+                "label": "Záruka kvality",
+                "text": "Na vyrobený nábytok poskytujeme viacročnú záruku, čím potvrdzujeme jeho kvalitu. Nepoužívame materiály nízkej kvality, ktoré sa často vyskytujú v stolárskom priemysle."
+            }
+        }
+    }
 }

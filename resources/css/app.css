@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap');
 
 :root {
-    --color-white: #FAFAFA; /* First color (white) */
-    --color-light-gray: #FFFFFF; /* Second color (light gray) */
-    --color-gray: #DCDCDC; /* Third color (medium gray) */
-    --color-dark-gray: #1C1C1C; /* Fourth color (dark gray) */
-    --color-black: #000000; /* Fifth color (black) */
-    --color--orange: #A45D42;
+    --color-white: #FFFFFF;
+    --color-gray: #F3F3F3;
+    --color-dark-gray: #D9D9D9;
+    --color-gray-text: #9E9991;
+    --color-braun: rgba(173, 142, 92, 0.35);
+    --color-dark-braun: #76664D;
 }
 
 body {
@@ -20,131 +20,14 @@ body {
         "wdth" 100;
 }
 
-footer {
-    height: 100px;
-    box-shadow: 0 5px 20px rgba(28, 28, 28, 0.3);
-    background-color: var(--color-light-gray);
-    display: inline-flex;
-    width: 100%;
+h1 {
+    color: var(--color-gray-text);
 }
-
-footer div{
-    width: calc(100%/3);
-}
-
-.footer-left img{
-    margin-left: 20px;
-}
-
-/* NAVBAR */
-.navbar{
-    --bs-navbar-padding-y: 1rem;
-    box-shadow: 0 5px 20px rgba(28, 28, 28, 0.3);
-}
-
-.dropdown-menu {
-    --bs-dropdown-min-width: auto;
-}
-
-.dropdown-menu .dropdown-item {
-    cursor: pointer;
-}
-
-.dropdown-menu .dropdown-item:active {
-    background-color: transparent;
-    color: var(--color--orange);
-}
-
-.nav-link:focus, .nav-link:hover{
-    color: var(--color--orange);
-}
-
-.navbar-brand{
-    padding-left: 1%;
-    font-weight: 700;
-    font-size: 1.35rem;
-}
-
-/* HOME */
-
-.home-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-}
-
-.header-image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 600px;
-    background-image: url('../../public/img/header-bg.jpg');
-    background-size: cover; /* Ensures the image covers the entire div */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat;
-}
-
-.header-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    color: var(--color-white);
-    border-left: 0.2rem solid var(--color-gray);
-}
-
-.header-text p{
-    font-weight: 650;
-    font-size: 1.75rem;
-}
-
-.home-profile{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-    height: 80vh;
-    width: 90%;
-    padding-top: 2rem;
-    background-color: rgba(0,0,0,.1);
-}
-
-.main-profile-wrapper{
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-}
-
-.main-profile-wrapper .element{
-    margin: 20px;
-    height: 500px;
-    width: calc(100%/3);
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.main-profile-wrapper .element div.h3{
-    margin-top: 30px;
-    font-weight: 600;
-}
-.main-profile-wrapper .element p {
-    width: 70%;
-}
-
-
-
 
 /* Contacts */
 .contacts {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    height: 59vh;
 }

@@ -1,16 +1,51 @@
 {
-    "about": "About Us",
-    "workshop": "Workshop",
-    "manufacture": "Manufacture",
-    "assembly": "Assembly",
-    "references": "References",
-    "gallery": "Gallery",
-    "contacts": "Contacts",
-    "homeHeaderText" : "<p>JK-Carpenters creates custom,</p>\n<p>high-quality furniture and woodwork solutions.</p>\n<p>We bring your vision to life with expert craftsmanship</p>",
-    "custom_furniture": "Custom furniture",
-    "custom_furniture_text": "carpentry, joinery, kitchen furniture, living room furniture, sliding door wardrobes, wardrobes, office furniture, bathroom furniture, built-in wardrobes, children's room furniture, shelving systems, doors and windows.",
-    "interior_joinery": "Interior joinery",
-    "interior_joinery_text": "Complete custom interior carpentry services (survey, custom furniture design, production, delivery, installation) with our expert craftsmen, tailored to individual needs.",
-    "quality_guaranteed": "Quality guaranteed",
-    "quality_guaranteed_text": "We provide multi-year warranties on our furniture, ensuring premium quality. We do not use low-quality materials typically found in the carpentry industry."
+    "navbar" : {
+        "about": "About Us",
+        "workshop": "Workshop",
+        "manufacture": "Manufacture",
+        "assembly": "Assembly",
+        "references": "References",
+        "gallery": "Gallery",
+        "contacts": "Contacts"
+    },
+
+    "footer" : {
+        "businessInfo": {
+            "label": {
+                "name": "Company Name",
+                "seat": "Seat",
+                "identificationNumber": "Identification Number (IČO)",
+                "taxNumber": "Tax Number (IČ DPH)",
+                "companyRegistrationNumber": "Company Registration Number",
+                "office": "Branch Office"
+            },
+            "text": {
+                "name": "JK Carpenters s.r.o",
+                "seat": "ul. kráľa Žigmunda 5869/25.\n Dunajská Streda 929 01",
+                "identificationNumber": "50 249 011",
+                "taxNumber": "2120244995",
+                "companyRegistrationNumber": "OR OS Trnava, odd. s.r.o, vložka č. 37438/T",
+                "office": "PPD Trhové Mýto, Dolnobarská 407.930 13 Trhová Hradská"
+            }
+        }
+    },
+
+    "/home":  {
+        "homeHeaderText": "<p>JK-Carpenters creates custom, high-quality </p>\n<p> furniture and carpentry solutions.</p>\n<p>We bring your ideas to life with expertise.</p>",
+        "mainProfile": {
+            "label": "Our Main Profile",
+            "custom_furniture": {
+                "label": "Custom Furniture",
+                "text": "Carpentry, custom furniture, kitchen furniture, living room furniture, sliding door wardrobes, wardrobes, office furniture, bathroom furniture, built-in wardrobes, children's room furniture, shelving systems, windows, and doors."
+            },
+            "interior_joinery": {
+                "label": "Interior Joinery",
+                "text": "Complete execution of interior joinery (survey, custom furniture design, manufacturing, delivery, on-site assembly) by our carpenters according to individual requirements."
+            },
+            "quality_guaranteed": {
+                "label": "Quality Guarantee",
+                "text": "We offer a multi-year guarantee on our finished furniture, further proving its quality. We do not use low-quality materials that are often found in the carpentry industry."
+            }
+        }
+    }
 }
