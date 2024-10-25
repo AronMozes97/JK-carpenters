@@ -1,19 +1,19 @@
-import './bootstrap';
+import '@/bootstrap';
 
 import {createApp} from "vue";
-import vuetify from './plugins/vuetify';
+import vuetify from '@/plugins/vuetify';
 
 import {createPinia} from "pinia";
-import {useLanguageStore} from "./stores/languages";
+import {useLanguageStore} from "@/stores/languages";
 import {createI18n} from "vue-i18n";
 
-import HU from './local/hu.json'
-import SK from './local/sk.json'
-import EN from './local/en.json'
+import HU from '@/local/hu.json'
+import SK from '@/local/sk.json'
+import EN from '@/local/en.json'
 
-import App from "./components/App.vue";
+import App from "@/components/App.vue";
 
-import router from "./router/router.js";
+import router from "@/router/router.js";
 
 const app = createApp(App).use(vuetify);
 

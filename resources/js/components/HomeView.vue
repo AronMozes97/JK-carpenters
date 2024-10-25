@@ -1,5 +1,10 @@
 <script setup>
+import PictureGrid from '@/components/layout/home/PictureGrid.vue'
+import ContactForm from "@/components/layout/home/ContactForm.vue";
 
+import img1 from '@public/img/home/jk4.jpg'
+import img2 from '@public/img/home/jk5.jpg'
+import img3 from '@public/img/home/jk6.jpg'
 </script>
 
 <template>
@@ -41,14 +46,14 @@
             </button>
         </div>
 
-        <div class="home-profile">
+        <div class="home-profile" id="profile">
             <h1>{{ $t('/home.mainProfile.label') }}</h1>
             <div class="main-profile-wrapper">
 
             </div>
         </div>
 
-        <div class="home-our-works">
+        <div class="home-our-works" id="ourWorks">
             <img src = "@public/svg/homePageRectangle.svg" alt="My Happy SVG" class="bg"/>
             <div class="all-elements">
                 <div class="text-area">
@@ -67,17 +72,12 @@
                         </p>
                     </div>
                 </div>
-                <div class="img-grid" :style="{'--top': '400px'}">
-                    <div class="bg-primary big-img"></div>
-                    <div class="bg-secondary small-img"></div>
-                    <div class="bg-danger small-img"></div>
-                </div>
-                <div class="img-grid" :style="{'--top':'1100px'}">
-                    <div class="bg-danger big-img"></div>
-                    <div class="bg-success small-img"></div>
-                    <div class="bg-warning small-img"></div>
-                </div>
+                <PictureGrid
+                    v-for="item in content"
+                    :style="{'--top': item.top}"
+                    :content="item.images"/>
             </div>
+
         </div>
 
         <h1 style="margin-left: 15%">
@@ -88,6 +88,8 @@
             </a>
         </h1>
 
+        <ContactForm/>
+
     </div>
 
 </template>
@@ -95,23 +97,25 @@
 export default {
     data() {
         return {
-            activeIndex: 1,
-            intervalId: null,
             content: [
                 {
                     id: 0,
-                    name: 'custom_furniture',
-                    img: 'https://picsum.photos/id/1/375/400'
+                    top: '400px',
+                    images: {
+                        0: img1,
+                        1: img2,
+                        2: img3,
+                    }
+
                 },
                 {
-                    id: 1,
-                    name: 'interior_joinery',
-                    img: 'https://picsum.photos/id/2/375/400'
-                },
-                {
-                    id: 2,
-                    name: 'quality_guaranteed',
-                    img: 'https://picsum.photos/id/3/375/400'
+                    id: 0,
+                    top: '1100px',
+                    images: {
+                        0: img1,
+                        1: img2,
+                        2: img3,
+                    }
                 }
             ]
         };
@@ -235,29 +239,5 @@ a:hover {
     font-weight: normal;
     line-height: 1.5;
     color: #fff; /* White text */
-}
-
-
-.img-grid {
-    --top: 0px;
-    position: absolute;
-    width: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    z-index: 30;
-    top: var(--top);
-    left: 5%;
-}
-
-
-.big-img {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-}
-
-.small-img {
-    width: 100%;
-    height: 300px;
 }
 </style>
