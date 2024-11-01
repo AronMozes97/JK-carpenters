@@ -6,9 +6,12 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "ext-curl": "*",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
-        "twbs/bootstrap-icons": "^1.11"
+        "simple-html-dom/simple-html-dom": "^1.5",
+        "twbs/bootstrap-icons": "^1.11",
+        "ext-dom": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

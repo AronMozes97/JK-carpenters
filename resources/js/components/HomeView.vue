@@ -1,6 +1,7 @@
 <script setup>
 import PictureGrid from '@/components/layout/home/PictureGrid.vue'
 import ContactForm from "@/components/layout/home/ContactForm.vue";
+import InstagramFeed from "@/components/layout/home/InstagramFeed.vue";
 
 import img1 from '@public/img/home/jk4.jpg'
 import img2 from '@public/img/home/jk5.jpg'
@@ -89,6 +90,8 @@ import img3 from '@public/img/home/jk6.jpg'
         </h1>
 
         <ContactForm/>
+
+        <InstagramFeed/>
 
     </div>
 
