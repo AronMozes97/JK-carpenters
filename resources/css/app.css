@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap');
 
 :root {
+    --coolor-navbar-text: #FFFFFF;
     --color-white: #FFFFFF;
     --color-gray: #F3F3F3;
     --color-dark-gray: #D9D9D9;
     --color-gray-text: #9E9991;
     --color-braun: rgba(173, 142, 92, 0.35);
-    --color-dark-braun: #76664D;
+    --color-dark-braun: #AD8E5C40;
+    --color-footer: #AD8E5C;
 }
 
 body {
@@ -18,10 +20,7 @@ body {
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
-}
-
-h1 {
-    color: var(--color-gray-text);
+    opacity: 100% !important;
 }
 
 /* Contacts */

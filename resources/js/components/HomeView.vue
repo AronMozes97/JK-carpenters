@@ -2,90 +2,81 @@
 import PictureGrid from '@/components/layout/home/PictureGrid.vue'
 import ContactForm from "@/components/layout/home/ContactForm.vue";
 import InstagramFeed from "@/components/layout/home/InstagramFeed.vue";
-
-import img1 from '@public/img/home/jk4.jpg'
-import img2 from '@public/img/home/jk5.jpg'
-import img3 from '@public/img/home/jk6.jpg'
 </script>
 
 <template>
     <div class="container-fluid d-flex align-content-start flex-column">
-        <div id="homeHeaderCarousel" class="carousel slide" data-bs-ride="false">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img
-                        src="https://s3-alpha-sig.figma.com/img/8aff/d00d/9c0bce9c5a4de5fde017a4a45e679b9d?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=c-JtlMvKe15eyijzZxp8AmThMy25zci0k-fGJbpLk45JZJaGwvH7Ullm69BJiwbjet427Wfnq2uc5sFq~iuF9viVK2t9cMxtvCPOxINf8ouHS7Wr25jtuVs4IGehYO~q5ZWXwXj1knu~M7Mq0f7qbO-6L2Owyj7SqjU4D-kFtQqBUJTmJf4qirMuYMxSiY4UAUlqY8B6mTjR9cnXofLLMN4Rwj~Bh1xYtSVQs-CB0QQ6HsDbxSfvaRYajvPDKmLcn6yakWflo1wq8B0hg5ElRs0lg6-mF5e5byLWjCm6ftsN4d4d8kH4ccqg60TvvmzZ9fdEAYA6bJgQacHEsqIjBw__"
-                        class="d-block w-100" alt="...">
-                    <h4 class="header-text">
-                        <p v-html="$t('/home.homeHeaderText')"></p>
-                    </h4>
-                </div>
-                <div class="carousel-item">
-                    <img
-                        src="https://s3-alpha-sig.figma.com/img/8aff/d00d/9c0bce9c5a4de5fde017a4a45e679b9d?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=c-JtlMvKe15eyijzZxp8AmThMy25zci0k-fGJbpLk45JZJaGwvH7Ullm69BJiwbjet427Wfnq2uc5sFq~iuF9viVK2t9cMxtvCPOxINf8ouHS7Wr25jtuVs4IGehYO~q5ZWXwXj1knu~M7Mq0f7qbO-6L2Owyj7SqjU4D-kFtQqBUJTmJf4qirMuYMxSiY4UAUlqY8B6mTjR9cnXofLLMN4Rwj~Bh1xYtSVQs-CB0QQ6HsDbxSfvaRYajvPDKmLcn6yakWflo1wq8B0hg5ElRs0lg6-mF5e5byLWjCm6ftsN4d4d8kH4ccqg60TvvmzZ9fdEAYA6bJgQacHEsqIjBw__"
-                        class="d-block w-100" alt="...">
-                    <h4 class="header-text">
-                        <p v-html="$t('/home.homeHeaderText')"></p>
-                    </h4>
-                </div>
-                <div class="carousel-item">
-                    <img
-                        src="https://s3-alpha-sig.figma.com/img/8aff/d00d/9c0bce9c5a4de5fde017a4a45e679b9d?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=c-JtlMvKe15eyijzZxp8AmThMy25zci0k-fGJbpLk45JZJaGwvH7Ullm69BJiwbjet427Wfnq2uc5sFq~iuF9viVK2t9cMxtvCPOxINf8ouHS7Wr25jtuVs4IGehYO~q5ZWXwXj1knu~M7Mq0f7qbO-6L2Owyj7SqjU4D-kFtQqBUJTmJf4qirMuYMxSiY4UAUlqY8B6mTjR9cnXofLLMN4Rwj~Bh1xYtSVQs-CB0QQ6HsDbxSfvaRYajvPDKmLcn6yakWflo1wq8B0hg5ElRs0lg6-mF5e5byLWjCm6ftsN4d4d8kH4ccqg60TvvmzZ9fdEAYA6bJgQacHEsqIjBw__"
-                        class="d-block w-100" alt="...">
-                    <h4 class="header-text">
-                        <p v-html="$t('/home.homeHeaderText')"></p>
-                    </h4>
+        <div class="header-holder">
+            <div class="header-text">
+                <div class="text-start">
+                    <h1>{{ $t('/home.homeHeaderText.1') }}</h1>
+                    <h1>{{ $t('/home.homeHeaderText.2') }}</h1>
+                    <p>
+                        {{ $t('/home.homeHeaderText.3') }}
+                        <br>
+                        {{ $t('/home.homeHeaderText.4') }}
+                    </p>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#homeHeaderCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#homeHeaderCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-        <div class="home-profile" id="profile">
-            <h1>{{ $t('/home.mainProfile.label') }}</h1>
-            <div class="main-profile-wrapper">
-
+            <div class="header-img">
+                <img
+                    src="@public/img/home/homeWelcome_v2.png"
+                    class="d-block w-100" alt="...">
             </div>
         </div>
+
+        <!--
+                <div class="home-profile" id="profile">
+                    <h1>{{ $t('/home.mainProfile.label') }}</h1>
+                    <div class="main-profile-wrapper">
+                    </div>
+                </div>-->
 
         <div class="home-our-works" id="ourWorks">
-            <img src = "@public/svg/homePageRectangle.svg" alt="My Happy SVG" class="bg"/>
+            <img src="@public/svg/homePageRectangle.svg" alt="My Happy SVG" class="bg"/>
             <div class="all-elements">
                 <div class="text-area">
                     <div class="content-box">
-                        <h1 class="title">Legjobb munkáink</h1>
-                        <p class="subtitle">Lorum ipse ivado lik hovki tuk ma.</p>
+                        <h1 class="title">Rólunk...</h1>
+                        <p class="subtitle">
+                            Különleges bútorok gyártására és beszerelésére specializálódtunk, melyek egyaránt
+                            funkcionálisak és dizájnosak.
+                        </p>
                         <p class="description">
-                            Rövid cégtörténet Lorum ipse tizál a cukros bőrös ellen... Mára a bugólas dicsőt (1) pilla márma kárványa hajás klás a metleves igazás alapján évente a bető trólium után hektáronként egyelmi kozást, a csúszt szerendenővel tüd patd tróliuma után hektáronként ezer kozást szonahat urlásként.
+                            Munkánk a precizitásról szól, amelyet a korszerű technológiák alkalmazásával érünk el.  
+                        </p>
+                        <p class="description">
+                            A kész bútorokra többéves garanciát biztosítunk a minőség garanciájaként. A legjobb
+                            bútorvasalat gyártókkal dolgozunk, mint a BLUM, Häfele, ICA
+                            és Kesseböhmer.
                         </p>
                     </div>
                     <div class="content-box">
-                        <h1 class="title">Legjobb munkáink</h1>
-                        <p class="subtitle">Lorum ipse ivado lik hovki tuk ma.</p>
+                        <h1 class="title"> </h1>
                         <p class="description">
-                            Rövid cégtörténet Lorum ipse tizál a cukros bőrös ellen... Mára a bugólas dicsőt (1) pilla márma kárványa hajás klás a metleves igazás alapján évente a bető trólium után hektáronként egyelmi kozást, a csúszt szerendenővel tüd patd tróliuma után hektáronként ezer kozást szonahat urlásként.
+                            Kreatív és tapasztalt csapatunk van, amely nem riad vissza az Ön igényeinek
+                            megvalósításától. Nyitottak vagyunk az új ötletekre, és modern technológiák segítségével
+                            olyan magas minőségű bútorokat készítünk, amelyek generációkat érnek meg.
+                        </p>
+                        <p class="description">
+                            Belsőépítészeti stúdiókkal működünk együtt, akiknek egyedi bútorokat gyártunk. Megbízható
+                            partnere vagyunk építészeknek és belsőépítési kivitelezőknek.
                         </p>
                     </div>
                 </div>
-                <PictureGrid
+<!--                <PictureGrid
                     v-for="item in content"
-                    :style="{'--top': item.top}"
-                    :content="item.images"/>
+                    :style="{'&#45;&#45;top': item.top}"
+                    :content="item.images"/>-->
             </div>
 
         </div>
 
         <h1 style="margin-left: 15%">
             <a href="#">
-            Kattintson
-            <br>
-            további képekért...
+                Kattintson
+                <br>
+                további képekért...
             </a>
         </h1>
 
@@ -97,6 +88,10 @@ import img3 from '@public/img/home/jk6.jpg'
 
 </template>
 <script>
+import img1 from '@public/img/home/jk4.jpg'
+import img2 from '@public/img/home/jk5.jpg'
+import img3 from '@public/img/home/jk6.jpg'
+
 export default {
     data() {
         return {
@@ -123,10 +118,8 @@ export default {
             ]
         };
     },
-    methods: {
-    },
-    computed: {
-    },
+    methods: {},
+    computed: {},
 }
 </script>
 <style scoped>
@@ -143,6 +136,16 @@ a:hover {
     padding: 0;
 }
 
+.header-holder {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header-img {
+    position: relative;
+    top: calc((100% - 60%) * -1);
+}
+
 .header-text {
     position: absolute;
     top: 50%;
@@ -152,13 +155,25 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
     color: var(--color-white);
+    background-color: rgba(133, 102, 58, 25%);
+}
+
+.header-text h1 {
+    font-weight: 850;
+    font-size: 6rem;
 }
 
 .header-text p {
     font-weight: 650;
     font-size: 1.75rem;
+}
+
+.carousel button {
+    z-index: 15;
 }
 
 .home-profile {
@@ -168,6 +183,7 @@ a:hover {
     flex-direction: column;
     height: auto;
     width: 100%;
+    margin-top: 2%;
 }
 
 .main-profile-wrapper {
@@ -183,15 +199,16 @@ a:hover {
 /*content*/
 .home-our-works {
     position: relative;
-    width: 90%;
+    width: 100%;
     height: 100%;
-    background-color: var(--color-braun);
+    background-color: #c5beb4;
     z-index: 10;
     padding-bottom: 1900px;
     margin-bottom: 50px;
+    margin-top: 200px;
 }
 
-.home-our-works .bg{
+.home-our-works .bg {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -204,7 +221,7 @@ a:hover {
     z-index: 20;
 }
 
-.home-our-works .text-area{
+.home-our-works .text-area {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -217,30 +234,28 @@ a:hover {
 }
 
 .content-box {
-    background-color: #e6d8c1; /* Beige-like background */
     padding: 20px;
-    width: 300px; /* Adjust width as needed */
-    font-family: Arial, sans-serif; /* You can change this to match the style you want */
+    width: 30%;
 }
 
 .title {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 10px;
     color: #fff; /* White text */
 }
 
 .subtitle {
     font-size: 16px;
-    font-weight: normal;
+    font-weight: bold;
     margin-bottom: 20px;
-    color: #eee; /* Lighter white text */
+    color: #fff;
 }
 
 .description {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
     line-height: 1.5;
-    color: #fff; /* White text */
+    color: #fff;
 }
 </style>

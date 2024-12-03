@@ -1,85 +1,244 @@
 <script setup>
-
 </script>
 
 <template>
-    <footer>
-        <div>
-            <div class="footer-left">
-                <img :src="'/img/logo.jpg'">
-                <div class="left text-start">
-                    <p><b>{{ $t('footer.businessInfo.label.name') }}:</b></p>
-                    <p><b>{{ $t('footer.businessInfo.label.seat') }}:</b></p>
-                    <p><b>{{ $t('footer.businessInfo.label.identificationNumber') }}:</b></p>
-                    <p><b>{{ $t('footer.businessInfo.label.taxNumber') }}:</b></p>
-                    <p><b>{{ $t('footer.businessInfo.label.companyRegistrationNumber') }}:</b></p>
-                    <p><b>{{ $t('footer.businessInfo.label.office') }}:</b></p>
+    <footer id="footer">
+        <div class="name">JK CARPENTERS</div>
+        <div class="upper-section">
+            <div class="left">
+                <div>
+                    <p>Cégnév</p>
+                    <p>ul. kráľa Žigmunda 5869/25., <br>
+                        Dunajská Streda 929 01</p>
                 </div>
-                <div class="right">
-                    <p>{{ $t('footer.businessInfo.text.name') }}</p>
-                    <p>{{ $t('footer.businessInfo.text.seat') }}</p>
-                    <p>{{ $t('footer.businessInfo.text.identificationNumber') }}</p>
-                    <p>{{ $t('footer.businessInfo.text.taxNumber') }}</p>
-                    <p>{{ $t('footer.businessInfo.text.companyRegistrationNumber') }}</p>
-                    <p>{{ $t('footer.businessInfo.text.office') }}</p>
+                <div>
+                    <p>Írjon nekünk</p>
+                    <i class="bi bi-instagram" onclick="window.open('https://www.instagram.com/jk_carpenters/')"></i>
+                    <i class="bi bi-facebook"
+                       onclick="window.open('https://www.facebook.com/profile.php?id=100064316940990')"></i>
+                </div>
+            </div>
+            <div class="line">
+                <div/>
+            </div>
+            <div class="center">
+                <div>
+                    <p>Identifikációs és adószám</p>
+                    <p>
+                        IČO: 50 249 011
+                        <br>
+                        IČ DPH: 2120244995
+                    </p>
+                </div>
+                <div>
+                    <p>Kántor István</p>
+                    <p class="tell">+421 20 886 49 15 </p>
+                </div>
+            </div>
+            <div class="line">
+                <div/>
+            </div>
+            <div class="right">
+                <div>
+                    <p>Telephely: </p>
+                    <p>
+                        IPPD Trhové Mýto,
+                        <br>
+                        Dolnobarská 407.930 13
+                        <br>
+                        Trhová Hradská
+                    </p>
+                </div>
+                <div>
+                    <p>Jurányi Roland </p>
+                    <p class="tell">+421 20 886 49 15</p>
                 </div>
             </div>
         </div>
-        <div class="text-center copyright">
-            Copyright © JK Carpenters s.r.o
+
+        <div class="lower-section">
+            <p style="margin: 0">
+                <span id="currentYear">2024</span>. Minden jog fentartva
+            </p>
         </div>
     </footer>
 </template>
+
+<script>
+</script>
 
 <style scoped>
 footer {
     height: fit-content;
     box-shadow: 0 5px 20px rgba(28, 28, 28, 0.3);
-    background-color: var(--color-light-gray);
+    background-color: #c7beae;
+    color: var(--color-white);
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-footer .copyright{
-    color: var(--color-dark-gray);
-    background-color: var(--color-gray);
+.upper-section, .lower-section {
+    width: 95%;
+    align-self: center;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
 }
 
-.footer-left{
+.name {
+    width: 95%;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px 0;
+    align-self: center;
+}
+
+.line {
+    height: 200px;
     display: flex;
     align-items: center;
 }
 
-.footer-left img{
-    margin-left: 20px;
-    max-width: 150px;
-    width: calc(100% / 3);
-    height: auto;
+.line div {
+    border-left: 1px solid #ffffff;
+    height: 80%;
 }
 
-.footer-left .left p{
-    font-size: 11px;
-    padding-right: 5px;
+.left, .center, .right {
+    width: 33%;
 }
 
-.footer-left .right{
-    font-size: 11px;
+.left div:nth-child(1) p:nth-child(1), .center div:nth-child(1) p:nth-child(1), .right div:nth-child(1) p:nth-child(1) {
+    font-size: 14px;
+    font-weight: 700;
 }
 
-.footer-left .left p:last-child,.footer-left .right p:last-child{
-    margin-bottom: 6px !important;
+.left div:nth-child(1) p:nth-child(2), .center div:nth-child(1) p:nth-child(2), .right div:nth-child(1) p:nth-child(2) {
+    font-weight: 400;
+    font-size: 16px;
 }
 
-.footer-center{
+.left div:nth-child(2) p:nth-child(1), .center div:nth-child(2), .right div:nth-child(2) {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.left div i {
+    font-size: 40px;
+    margin: 0 10px;
+}
+
+.center {
     display: flex;
-    justify-content: end;
-    align-items: start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer-right{
+.center div {
+    width: 60%;
+    text-align: left;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+.right div {
+    width: 70%;
+    text-align: left;
+}
+
+.lower-section {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
+    align-self: start;
 }
+
+.bi {
+    cursor: pointer;
+}
+
+@media (max-width: 960px) {
+    .center {
+        width: 40% !important;
+    }
+}
+
+@media (max-width: 878px) {
+    .right{
+        margin-left: -20px;
+    }
+}
+
+@media (max-width: 818px) {
+    .tell{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 682px) {
+    .tell{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 666px) {
+    .upper-section {
+        display: grid;
+        grid-template-rows: auto auto; /* Two rows: one for the top, one for the bottom */
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        gap: 10px; /* Optional: space between items */
+        width: 100%;
+        align-items: start; /* Vertically align all grid items */
+        justify-items: center; /* Horizontally align all grid items */
+    }
+
+    .left {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        grid-column: 1 / 3; /* Span across both columns */
+        grid-row: 1 / 2; /* Place in the first row */
+    }
+
+    .center {
+        width: 100% !important;
+        grid-column: 1 / 2; /* Place in the first column */
+        grid-row: 2 / 3; /* Place in the second row */
+        align-items: center;
+    }
+
+    .right {
+        width: 100% !important;
+        grid-column: 2 / 3; /* Place in the second column */
+        grid-row: 2 / 3; /* Place in the second row */
+        border-left: 1px solid #ffffff;
+        align-items: center;
+    }
+
+    .center div p,
+    .right div p {
+        width: 100% !important;
+    }
+
+
+    .line{
+        display: none !important;
+    }
+
+    .left div p:nth-child(1){
+        text-align: center;
+    };
+
+
+}
+
 </style>

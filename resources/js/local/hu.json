@@ -1,5 +1,5 @@
 {
-    "navbar" : {
+    "navbar": {
         "about": "Rólunk",
         "workshop": "Műhely",
         "manufacture": "Gyártás",
@@ -8,8 +8,7 @@
         "gallery": "Galéria",
         "contacts": "Kapcsolatok"
     },
-
-    "footer" : {
+    "footer": {
         "businessInfo": {
             "label": {
                 "name": "Cégnév",
@@ -29,9 +28,13 @@
             }
         }
     },
-
-    "/home":  {
-        "homeHeaderText": "<p>A JK-Carpenters egyedi, kiváló minőségű </p>\n<p> bútorokat és asztalos megoldásokat készít.</p>\n<p>Szakértelemmel valósítjuk meg az elképzeléseit.</p>",
+    "/home": {
+        "homeHeaderText": {
+            "1": "Egyedi Bútor",
+            "2": "",
+            "3": "A funkcionális, egyedi design bútorok.",
+            "4": ""
+        },
         "mainProfile": {
             "label": "Fő profilunk",
             "custom_furniture": {
@@ -48,8 +51,7 @@
             }
         }
     },
-
     "/contacts": {
-        "label" : "asd"
+        "label": "asd"
     }
 }

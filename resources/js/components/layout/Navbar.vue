@@ -86,19 +86,26 @@ import verticalLine from '../smallElements/VerticalLine.vue'
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 100px;
     background-color: transparent !important;
     z-index: 1000;
     padding: 0 20px;
 }
 
-.navbar-nav li a{
+.navbar-nav {
+    height: 60px !important;
+}
+
+.nav-item a {
     color: var(--color-white);
+    font-size: 1.3rem;
+    margin: 0 15px;
+    font-weight: 500;
 }
 
 .dropdown-menu {
     --bs-dropdown-min-width: auto;
-    background-color: transparent;
+    background-color: rgba(255,255,255, .05);
     border: none;
 }
 
@@ -106,27 +113,31 @@ import verticalLine from '../smallElements/VerticalLine.vue'
     cursor: pointer;
 }
 
-.dropdown-menu .dropdown-item a{
-    color: var(--color-white);
+.dropdown-menu .dropdown-item a {
+    color: var(--coolor-navbar-text);
 }
 
 .dropdown-menu .dropdown-item:active {
-    color: var(--color-dark-gray);
+    color: var(--coolor-navbar-text);
 }
 
 .dropdown-menu .dropdown-item:hover {
     background-color: transparent;
-    color: var(--color-dark-gray);
+    color: var(--coolor-navbar-text);
 }
 
 .nav-link:focus, .nav-link:hover {
-    color: var(--color-dark-gray);
+    color: var(--coolor-navbar-text);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: var(--coolor-navbar-text);
 }
 
 .navbar-brand {
     padding-left: 1%;
     font-weight: 700;
-    font-size: 1.35rem;
+    font-size: 1.75rem;
     color: var(--color-white);
 }
 </style>

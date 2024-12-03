@@ -10,6 +10,5 @@
     .line{
         border-left: 1px solid #ffffff;
         height: 75%;
-        margin-top: 1.5%;
     }
 </style>
