@@ -5,19 +5,19 @@ import verticalLine from '../smallElements/VerticalLine.vue'
 
 
 <template>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <RouterLink :to="{name: 'home'}" class="navbar-brand">
                 JK-carpenters
             </RouterLink>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="d-flex justify-content-end w-100 pe-5">
-                    <ul class="navbar-nav me-0 mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-0 mb-2 mb-lg-0 align-items-center">
                         <li class="nav-item">
                             <RouterLink :to="{name: 'home'}" class="nav-link">
                                 {{ $t('navbar.about') }}
@@ -95,6 +95,15 @@ import verticalLine from '../smallElements/VerticalLine.vue'
 .navbar-nav {
     height: 60px !important;
 }
+
+.navbar-toggler{
+    border: solid 1px var(--color-white);
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1); /* Makes the icon white */
+}
+
 
 .nav-item a {
     color: var(--color-white);

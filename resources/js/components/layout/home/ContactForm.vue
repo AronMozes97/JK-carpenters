@@ -110,8 +110,13 @@
     color: #F9F5EF;
 }
 
+.text-holder h1 {
+    padding-right: 20px;
+}
+
 .text-holder p {
     font-weight: 550;
+    padding-right: 75px;
 }
 
 .form-control {
@@ -130,6 +135,36 @@
     background-color: #c7beae;
     width: 150px;
     color: var(--color-white);
+}
+
+@media (max-width: 1342px) {
+    .innerPart {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-us {
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    .btn {
+        width: 100px;
+    }
+    .from-holder{
+        left: 1%;
+        width: 56%;
+    }
+
+    .text-holder h1 {
+        padding: 0 0 0 5%;
+    }
+
+    .text-holder p {
+        padding: 0 0 0 5%;
+    }
 }
 
 </style>

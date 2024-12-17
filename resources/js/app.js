@@ -15,7 +15,9 @@ import App from "@/components/App.vue";
 
 import router from "@/router/router.js";
 
-const app = createApp(App).use(vuetify);
+const app = createApp(App);
+
+app.use(vuetify);
 
 app.use(createPinia());
 

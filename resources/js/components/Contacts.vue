@@ -1,4 +1,5 @@
 <script setup>
+
 </script>
 <template>
     <div class="contacts">
@@ -14,3 +15,16 @@
     </div>
 
 </template>
+<script>
+export default {
+    name: "Contacts",
+    mounted() {
+        $('.contacts').css('height', `calc(${window.innerHeight - $('#footer').get(0).offsetHeight}px)`);
+    }
+}
+</script>
+<style scoped>
+.contacts {
+    background-color: #c7beae;
+}
+</style>

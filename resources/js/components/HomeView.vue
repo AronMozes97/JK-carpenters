@@ -121,6 +121,10 @@ export default {
     methods: {},
     computed: {},
 }
+
+/*window.onload = function () {
+    $('.contacts').css('height', `calc(${window.innerHeight - $('#footer').get(0).offsetHeight}px)`);
+}*/
 </script>
 <style scoped>
 a {
@@ -137,13 +141,14 @@ a:hover {
 }
 
 .header-holder {
+    position: relative;
     height: 100vh;
     overflow: hidden;
 }
 
 .header-img {
     position: relative;
-    top: calc((100% - 60%) * -1);
+    top: -40%;
 }
 
 .header-text {
@@ -205,7 +210,7 @@ a:hover {
     z-index: 10;
     padding-bottom: 1900px;
     margin-bottom: 50px;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .home-our-works .bg {
@@ -257,5 +262,118 @@ a:hover {
     font-weight: normal;
     line-height: 1.5;
     color: #fff;
+}
+
+@media (max-width: 1700px) {
+    .header-img {
+        top: -35%;
+    }
+}
+
+@media (max-width: 1635px) {
+    .header-img {
+        top: -30%;
+    }
+}
+
+@media (max-width: 1575px) {
+    .header-img {
+        top: -25%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .header-img {
+        top: -20%;
+    }
+}
+
+@media (max-width: 1450px) {
+    .header-img {
+        top: -15%;
+    }
+}
+
+@media (max-width: 1390px) {
+    .header-img {
+        top: -10%;
+    }
+}
+
+@media (max-width: 1328px) {
+    .header-img {
+        top: -5%;
+    }
+}
+@media (max-width: 1270px) {
+    .header-img {
+        top: 0;
+    }
+}
+
+@media (max-width: 1210px) {
+    .header-holder{
+        height: fit-content;
+    }
+
+    .header-text {
+        height: 100% !important;
+    }
+
+    .content-box {
+        width: 40%;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-text h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .header-text h1 {
+        font-size: 3rem;
+    }
+    .header-text p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .content-box {
+        width: 50%;
+    }
+}
+
+@media (max-width: 650px) {
+    .header-text h1 {
+        font-size: 2.5rem;
+    }
+    .header-text p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .header-text {
+        padding-top: 10% !important;
+    }
+
+    .header-text h1 {
+        font-size: 2rem;
+    }
+    .header-text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-text h1 {
+        font-size: 1.5rem;
+    }
+    .header-text p {
+        font-size: .8rem;
+    }
 }
 </style>
