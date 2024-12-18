@@ -64,10 +64,10 @@ import InstagramFeed from "@/components/layout/home/InstagramFeed.vue";
                         </p>
                     </div>
                 </div>
-<!--                <PictureGrid
+                <PictureGrid
                     v-for="item in content"
                     :style="{'&#45;&#45;top': item.top}"
-                    :content="item.images"/>-->
+                    :content="item.images"/>
             </div>
 
         </div>

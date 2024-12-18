@@ -1,11 +1,9 @@
 <?php
 
-use App\Http\Controllers\ApiController;
+use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Route;
 
-
-
-Route::get('/api/instagram-feed', [ApiController::class, 'getInstagramFeed'])->name('instagram-feed-api');
+Route::get('/mail/contact', [MailController::class, 'sendContactMail'])->name('send.contact.mail');
 
 Route::get('/{pathMatch?}', function () {
     return view('core');

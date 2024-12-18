@@ -49,6 +49,20 @@
                 "label": "Minőségi Garancia",
                 "text": "Az elkészült bútorainkra több év garanciát vállalunk, ezzel is igazolva minőségét. Az asztalos iparban előforduló gyenge minőségű alapanyagokat nem használunk."
             }
+        },
+        "contactForm": {
+            "nameInput": {
+                "message": "Add meg a neved!"
+            },
+            "telInput": {
+                "message": "Add meg a telefonszámod!"
+            },
+            "emailInput": {
+                "message": "Add meg az email címed!"
+            },
+            "messageInput": {
+                "message": "Írd meg az üzeneted!"
+            }
         }
     },
     "/contacts": {

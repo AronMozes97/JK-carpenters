@@ -1,5 +1,5 @@
 <script setup>
-import {getCurrentLanguage} from '../../stores/languages';
+import {getCurrentLanguage} from '@/stores/languages.js';
 import verticalLine from '../smallElements/VerticalLine.vue'
 </script>
 

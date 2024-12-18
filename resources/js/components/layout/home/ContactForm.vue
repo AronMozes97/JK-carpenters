@@ -1,5 +1,61 @@
 <script setup>
+import {useI18n} from 'vue-i18n';
 
+const {t} = useI18n();
+
+
+window.onload = function () {
+    const inputs = [
+        {field: 'nameInput', message: t('/home.contactForm.nameInput.message')},
+        {field: 'telInput', message: t('/home.contactForm.telInput.message')},
+        {field: 'emailInput', message: t('/home.contactForm.emailInput.message')},
+        {field: 'messageInput', message: t('/home.contactForm.messageInput.message')},
+    ];
+
+    inputs.forEach(({field, message}) => {
+        const inputElement = document.getElementById(field);
+
+        inputElement.addEventListener('invalid', (event) => {
+            event.target.setCustomValidity(message);
+        });
+
+        inputElement.addEventListener('input', (event) => {
+            event.target.setCustomValidity('');
+        });
+    });
+
+    document.getElementById('send').addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent default button action
+
+        let isValid = true;
+        inputs.reverse().forEach(({field}) => {
+            const inputElement = document.getElementById(field);
+
+            if (!inputElement.checkValidity()) {
+                inputElement.reportValidity();
+                isValid = false;
+            }
+        });
+
+        if (isValid) {
+            const apiUrl = route('send.contact.mail');
+            $.ajax({
+                url: apiUrl,
+                method: "GET",
+                data: {
+                    name: $('#nameInput').val(),
+                    businessName: $('#businessNameInput').val(),
+                    tel: $('#telInput').val(),
+                    email: $('#emailInput').val(),
+                    message: $('#messageInput').val(),
+                },
+                success: function (response) {
+                    console.log(response);
+                }
+            });
+        }
+    });
+}
 </script>
 
 <template>
@@ -18,35 +74,33 @@
                     </p>
                 </div>
                 <div class="from-holder">
-                    <div class="mb-3">
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                               placeholder="Business name">
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Phone">
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail">
-                    </div>
-                    <div class="mb-3">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
-                                  placeholder="Message"></textarea>
-                    </div>
-                    <button class="btn">
-                        Send
-                        <i class="bi bi-envelope-fill"></i>
-                    </button>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="nameInput" placeholder="Name" required value="Mozes Aron">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="businessNameInput" placeholder="Business name" value="JK Carpenters">
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" id="telInput" placeholder="Phone" required value="0918264780">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="emailInput" placeholder="E-mail" required value="aron.mozes97@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                        <textarea class="form-control" id="messageInput" rows="5"
+                                  placeholder="Message" required>asdasdas</textarea>
+                        </div>
+                        <button class="btn" id="send">
+                            Send
+                            <i class="bi bi-envelope-fill"></i>
+                        </button>
                 </div>
             </div>
         </div>
     </div>
 </template>
-
 <style scoped>
-.holder{
+.holder {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,7 +142,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
-.from-holder > div > input{
+.from-holder > div > input {
     height: 56px;
 }
 
@@ -153,7 +207,8 @@
     .btn {
         width: 100px;
     }
-    .from-holder{
+
+    .from-holder {
         left: 1%;
         width: 56%;
     }
