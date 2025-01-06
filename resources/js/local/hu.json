@@ -8,26 +8,27 @@
         "gallery": "Galéria",
         "contacts": "Kapcsolatok"
     },
-    "footer": {
-        "businessInfo": {
-            "label": {
-                "name": "Cégnév",
-                "seat": "Székhely",
-                "identificationNumber": "Identifikációs szám (IČO)",
-                "taxNumber": "Adószám (IČ DPH)",
-                "companyRegistrationNumber": "Cégjegyzékszám",
-                "office": "Telephely"
-            },
-            "text": {
-                "name": "JK Carpenters s.r.o",
-                "seat": "ul. kráľa Žigmunda 5869/25.\n Dunajská Streda 929 01",
-                "identificationNumber": "50 249 011",
-                "taxNumber": "2120244995",
-                "companyRegistrationNumber": "OR OS Trnava, odd. s.r.o, vložka č. 37438/T",
-                "office": "PPD Trhové Mýto, Dolnobarská 407.930 13 Trhová Hradská"
-            }
+    "businessInfo": {
+        "contact": "Kapcsolat",
+        "label": {
+            "name": "Cégnév",
+            "seat": "Székhely",
+            "identificationNumber": "Identifikációs szám (IČO)",
+            "taxNumber": "Adószám (IČ DPH)",
+            "companyRegistrationNumber": "Cégjegyzékszám",
+            "office": "Telephely"
+        },
+        "text": {
+            "name": "JK Carpenters s.r.o",
+            "seat": "ul. kráľa Žigmunda 5869/25.\n Dunajská Streda 929 01",
+            "identificationNumber": "50 249 011",
+            "taxNumber": "2120244995",
+            "companyRegistrationNumber": "OR OS Trnava, odd. s.r.o, vložka č. 37438/T",
+            "office": "PPD Trhové Mýto, Dolnobarská 407 930 13 Trhová Hradská"
         }
     },
+    "contactUs": "Írjon nekünk",
+    "rightsReserved": "Minden jog fenntartva",
     "/home": {
         "homeHeaderText": {
             "1": "Egyedi Bútor",
@@ -50,22 +51,50 @@
                 "text": "Az elkészült bútorainkra több év garanciát vállalunk, ezzel is igazolva minőségét. Az asztalos iparban előforduló gyenge minőségű alapanyagokat nem használunk."
             }
         },
+        "aboutUs": {
+            "section1": {
+                "title": "Rólunk...",
+                "subtitle": "Különleges bútorok gyártására és beszerelésére specializálódtunk, melyek egyaránt funkcionálisak és dizájnosak.",
+                "description1": "Munkánk a precizitásról szól, amelyet a korszerű technológiák alkalmazásával érünk el.",
+                "description2": "A kész bútorokra többéves garanciát biztosítunk a minőség garanciájaként. A legjobb bútorvasalat gyártókkal dolgozunk, mint a BLUM, Häfele, ICA és Kesseböhmer."
+            },
+            "section2": {
+                "title": " ",
+                "description1": "Kreatív és tapasztalt csapatunk van, amely nem riad vissza az Ön igényeinek megvalósításától. Nyitottak vagyunk az új ötletekre, és modern technológiák segítségével olyan magas minőségű bútorokat készítünk, amelyek generációkat érnek meg.",
+                "description2": "Belsőépítészeti stúdiókkal működünk együtt, akiknek egyedi bútorokat gyártunk. Megbízható partnere vagyunk építészeknek és belsőépítési kivitelezőknek."
+            }
+        },
+        "morePictures": {
+            "1": "Kattintson",
+            "2": "további képekért..."
+        },
         "contactForm": {
+            "title1": "Kérjen",
+            "title2": "ajánlatot még ma!",
+            "description": "Cégünk Termékeiet és szolgáltatásait magas színvonalon képviseljük a külpiacokon is. Személyes egyeztetésért vegye fel velünk a kapcsolatot.",
             "nameInput": {
-                "message": "Add meg a neved!"
+                "message": "Add meg a neved!",
+                "inputText": "Név"
+            },
+            "businessName": {
+                "inputText": "Cégnév"
             },
             "telInput": {
-                "message": "Add meg a telefonszámod!"
+                "message": "Add meg a telefonszámod!",
+                "inputText": "Telefonszám"
             },
             "emailInput": {
-                "message": "Add meg az email címed!"
+                "message": "Add meg az email címed!",
+                "inputText": "Email cím"
             },
             "messageInput": {
-                "message": "Írd meg az üzeneted!"
+                "message": "Írd meg az üzeneted!",
+                "inputText": "Üzenet"
             }
         }
     },
     "/contacts": {
         "label": "asd"
-    }
+    },
+    "send": "Küldés"
 }

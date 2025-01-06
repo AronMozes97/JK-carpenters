@@ -21,46 +21,33 @@ import InstagramFeed from "@/components/layout/home/InstagramFeed.vue";
             <div class="header-img">
                 <img
                     src="@public/img/home/homeWelcome_v2.png"
-                    class="d-block w-100" alt="...">
+                    class="d-block w-100" alt="JK carpenters">
             </div>
         </div>
 
-        <!--
-                <div class="home-profile" id="profile">
-                    <h1>{{ $t('/home.mainProfile.label') }}</h1>
-                    <div class="main-profile-wrapper">
-                    </div>
-                </div>-->
-
         <div class="home-our-works" id="ourWorks">
-            <img src="@public/svg/homePageRectangle.svg" alt="My Happy SVG" class="bg"/>
+            <img src="@public/svg/homePageRectangle.svg" alt="My Happy SVG" class="bg" style="pointer-events: none;"/>
             <div class="all-elements">
                 <div class="text-area">
                     <div class="content-box">
-                        <h1 class="title">Rólunk...</h1>
+                        <h1 class="title">{{ $t('/home.aboutUs.section1.title') }}</h1>
                         <p class="subtitle">
-                            Különleges bútorok gyártására és beszerelésére specializálódtunk, melyek egyaránt
-                            funkcionálisak és dizájnosak.
+                            {{ $t('/home.aboutUs.section1.subtitle') }}
                         </p>
                         <p class="description">
-                            Munkánk a precizitásról szól, amelyet a korszerű technológiák alkalmazásával érünk el.  
+                            {{ $t('/home.aboutUs.section1.description1') }}
                         </p>
                         <p class="description">
-                            A kész bútorokra többéves garanciát biztosítunk a minőség garanciájaként. A legjobb
-                            bútorvasalat gyártókkal dolgozunk, mint a BLUM, Häfele, ICA
-                            és Kesseböhmer.
+                            {{ $t('/home.aboutUs.section1.description2') }}
                         </p>
                     </div>
                     <div class="content-box">
-                        <h1 class="title"> </h1>
+                        <h1 class="title">{{ $t('/home.aboutUs.section2.title') }}</h1><!--just to fill this line so the 2nd column start at the same height-->
                         <p class="description">
-                            Kreatív és tapasztalt csapatunk van, amely nem riad vissza az Ön igényeinek
-                            megvalósításától. Nyitottak vagyunk az új ötletekre, és modern technológiák segítségével
-                            olyan magas minőségű bútorokat készítünk, amelyek generációkat érnek meg.
+                            {{ $t('/home.aboutUs.section2.description1') }}
                         </p>
                         <p class="description">
-                            Belsőépítészeti stúdiókkal működünk együtt, akiknek egyedi bútorokat gyártunk. Megbízható
-                            partnere vagyunk építészeknek és belsőépítési kivitelezőknek.
+                            {{ $t('/home.aboutUs.section2.description2') }}
                         </p>
                     </div>
                 </div>
@@ -74,9 +61,9 @@ import InstagramFeed from "@/components/layout/home/InstagramFeed.vue";
 
         <h1 style="margin-left: 15%">
             <a href="#">
-                Kattintson
+                {{ $t('/home.morePictures.1') }}
                 <br>
-                további képekért...
+                {{ $t('/home.morePictures.2') }}
             </a>
         </h1>
 
@@ -88,9 +75,12 @@ import InstagramFeed from "@/components/layout/home/InstagramFeed.vue";
 
 </template>
 <script>
-import img1 from '@public/img/home/jk4.jpg'
-import img2 from '@public/img/home/jk5.jpg'
-import img3 from '@public/img/home/jk6.jpg'
+import imgLong from '@public/img/home/CARP.png'
+import imgLong2 from '@public/img/home/CARP2.png'
+import imgSmall11 from '@public/img/home/Carp_fekt.png'
+import imgSmall12 from '@public/img/home/Carp_fekt2.png'
+import imgSmall21 from '@public/img/home/Carp_fekt3.png'
+import imgSmall22 from '@public/img/home/Carp_fekt4.png'
 
 export default {
     data() {
@@ -100,9 +90,9 @@ export default {
                     id: 0,
                     top: '400px',
                     images: {
-                        0: img1,
-                        1: img2,
-                        2: img3,
+                        0: imgLong,
+                        1: imgSmall11,
+                        2: imgSmall12,
                     }
 
                 },
@@ -110,9 +100,9 @@ export default {
                     id: 0,
                     top: '1100px',
                     images: {
-                        0: img1,
-                        1: img2,
-                        2: img3,
+                        0: imgLong2,
+                        1: imgSmall21,
+                        2: imgSmall22,
                     }
                 }
             ]
@@ -122,9 +112,6 @@ export default {
     computed: {},
 }
 
-/*window.onload = function () {
-    $('.contacts').css('height', `calc(${window.innerHeight - $('#footer').get(0).offsetHeight}px)`);
-}*/
 </script>
 <style scoped>
 a {
@@ -142,7 +129,7 @@ a:hover {
 
 .header-holder {
     position: relative;
-    height: 100vh;
+    height: 100dvh;
     overflow: hidden;
 }
 
@@ -205,7 +192,7 @@ a:hover {
 .home-our-works {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     background-color: #c5beb4;
     z-index: 10;
     padding-bottom: 1900px;
@@ -215,12 +202,12 @@ a:hover {
 
 .home-our-works .bg {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     right: 0;
     background-image: url("@public/svg/homePageRectangle.svg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     width: 100%;
     height: auto;
     z-index: 20;
@@ -305,6 +292,7 @@ a:hover {
         top: -5%;
     }
 }
+
 @media (max-width: 1270px) {
     .header-img {
         top: 0;
@@ -312,7 +300,7 @@ a:hover {
 }
 
 @media (max-width: 1210px) {
-    .header-holder{
+    .header-holder {
         height: fit-content;
     }
 
@@ -331,10 +319,17 @@ a:hover {
     }
 }
 
+@media (max-width: 900px) {
+    .home-our-works {
+        padding-bottom: 1700px;
+    }
+}
+
 @media (max-width: 850px) {
     .header-text h1 {
         font-size: 3rem;
     }
+
     .header-text p {
         font-size: 1.5rem;
     }
@@ -344,14 +339,25 @@ a:hover {
     .content-box {
         width: 50%;
     }
+
+    .home-our-works {
+        padding-bottom: 1500px;
+    }
 }
 
 @media (max-width: 650px) {
     .header-text h1 {
         font-size: 2.5rem;
     }
+
     .header-text p {
         font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 530px) {
+    .home-our-works {
+        padding-bottom: 1900px;
     }
 }
 
@@ -363,8 +369,13 @@ a:hover {
     .header-text h1 {
         font-size: 2rem;
     }
+
     .header-text p {
         font-size: 1rem;
+    }
+
+    .content-box {
+        padding: 20px 10px;
     }
 }
 
@@ -372,8 +383,15 @@ a:hover {
     .header-text h1 {
         font-size: 1.5rem;
     }
+
     .header-text p {
         font-size: .8rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .content-box {
+        padding: 20px 5px;
     }
 }
 </style>

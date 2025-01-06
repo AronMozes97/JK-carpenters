@@ -51,6 +51,7 @@ window.onload = function () {
                 },
                 success: function (response) {
                     console.log(response);
+                    //TODO kuldeskor kiirni h elkuldtuk
                 }
             });
         }
@@ -64,34 +65,32 @@ window.onload = function () {
             <div class="innerPart">
                 <div class="text-holder">
                     <h1>
-                        Kérjen
+                        {{ $t('/home.contactForm.title1') }}
                         <br>
-                        ajánlatot még ma!
+                        {{ $t('/home.contactForm.title2') }}
                     </h1>
-                    <p>Cégünk Termékeiet és szolgáltatásait magas színvonalon képviseljük
-                        a külpiacokon is. Személyes egyeztetésért vegye fel velünk
-                        a kapcsolatot.
+                    <p>{{ $t('/home.contactForm.description') }}
                     </p>
                 </div>
                 <div class="from-holder">
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="nameInput" placeholder="Name" required value="Mozes Aron">
+                            <input type="text" class="form-control" id="nameInput" :placeholder="$t('/home.contactForm.nameInput.inputText')" required>
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="businessNameInput" placeholder="Business name" value="JK Carpenters">
+                            <input type="text" class="form-control" id="businessNameInput" :placeholder="$t('/home.contactForm.businessName.inputText')">
                         </div>
                         <div class="mb-3">
-                            <input type="tel" class="form-control" id="telInput" placeholder="Phone" required value="0918264780">
+                            <input type="tel" class="form-control" id="telInput" :placeholder="$t('/home.contactForm.telInput.inputText')" required >
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control" id="emailInput" placeholder="E-mail" required value="aron.mozes97@gmail.com">
+                            <input type="email" class="form-control" id="emailInput" :placeholder="$t('/home.contactForm.emailInput.inputText')" required>
                         </div>
                         <div class="mb-3">
                         <textarea class="form-control" id="messageInput" rows="5"
-                                  placeholder="Message" required>asdasdas</textarea>
+                                  :placeholder="$t('/home.contactForm.messageInput.inputText')" required></textarea>
                         </div>
                         <button class="btn" id="send">
-                            Send
+                            {{ $t('send') }}
                             <i class="bi bi-envelope-fill"></i>
                         </button>
                 </div>

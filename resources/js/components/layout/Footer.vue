@@ -7,15 +7,14 @@
         <div class="upper-section">
             <div class="left">
                 <div>
-                    <p>Cégnév</p>
+                    <p>{{ $t('businessInfo.label.name') }}</p>
                     <p>ul. kráľa Žigmunda 5869/25., <br>
                         Dunajská Streda 929 01</p>
                 </div>
                 <div>
-                    <p>Írjon nekünk</p>
+                    <p>{{ $t('contactUs') }}</p>
                     <i class="bi bi-instagram" onclick="window.open('https://www.instagram.com/jk_carpenters/')"></i>
-                    <i class="bi bi-facebook"
-                       onclick="window.open('https://www.facebook.com/profile.php?id=100064316940990')"></i>
+                    <i class="bi bi-facebook" onclick="window.open('https://www.facebook.com/profile.php?id=100064316940990')"></i>
                 </div>
             </div>
             <div class="line">
@@ -23,9 +22,9 @@
             </div>
             <div class="center">
                 <div>
-                    <p>Identifikációs és adószám</p>
+                    <p>{{ $t('businessInfo.label.identificationNumber') }}</p>
                     <p>
-                        IČO: 50 249 011
+                        IČO: 50 249 011
                         <br>
                         IČ DPH: 2120244995
                     </p>
@@ -40,11 +39,11 @@
             </div>
             <div class="right">
                 <div>
-                    <p>Telephely: </p>
+                    <p>{{ $t('businessInfo.label.office') }}: </p>
                     <p>
                         IPPD Trhové Mýto,
                         <br>
-                        Dolnobarská 407.930 13
+                        Dolnobarská 407 | 930 13
                         <br>
                         Trhová Hradská
                     </p>
@@ -58,7 +57,7 @@
 
         <div class="lower-section">
             <p style="margin: 0">
-                <span id="currentYear">2024</span>. Minden jog fentartva
+                <span id="currentYear">2024</span> {{ $t('rightsReserved') }}
             </p>
         </div>
     </footer>
@@ -237,8 +236,6 @@ footer {
     .left div p:nth-child(1){
         text-align: center;
     };
-
-
 }
 
 </style>

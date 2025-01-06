@@ -2,22 +2,38 @@
 import {getCurrentLanguage} from '@/stores/languages.js';
 import verticalLine from '../smallElements/VerticalLine.vue'
 </script>
-
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('click', function (event) {
+        const offcanvasElement = document.getElementById('offcanvasNavbar');
+        if (offcanvasElement) {
+            const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasElement);
+            if (offcanvasInstance && event.target.closest('.nav-link:not(.dropdown-toggle)')) {
+                offcanvasInstance.hide();
+            }
+        }
+    });
+})
+</script>
 
 <template>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar">
         <div class="container-fluid">
             <RouterLink :to="{name: 'home'}" class="navbar-brand">
                 JK-carpenters
             </RouterLink>
-            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="d-flex justify-content-end w-100 pe-5">
-                    <ul class="navbar-nav me-0 mb-2 mb-lg-0 align-items-center">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                 aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">JK-carpenters </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
                             <RouterLink :to="{name: 'home'}" class="nav-link">
                                 {{ $t('navbar.about') }}
@@ -30,7 +46,11 @@ import verticalLine from '../smallElements/VerticalLine.vue'
                                 {{ $t('navbar.workshop') }}
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">{{ $t('navbar.manufacture') }}</a></li>
+                                <li>
+                                    <RouterLink :to="{name: 'workshop-gallery'}" class="dropdown-item">
+                                        {{ $t('navbar.manufacture') }}
+                                    </RouterLink>
+                                </li>
                                 <li><a class="dropdown-item" href="#">{{ $t('navbar.assembly') }}</a></li>
                             </ul>
                         </li>
@@ -72,81 +92,55 @@ import verticalLine from '../smallElements/VerticalLine.vue'
                                 </li>
                             </ul>
                         </li>
-
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
 </template>
+
 <style scoped>
-.navbar {
-    --bs-navbar-padding-y: 1rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-color: transparent !important;
-    z-index: 1000;
-    padding: 0 20px;
+.navbar{
+    --bs-navbar-toggler-border-color: transparent;
+    background-color: #c7beae !important;
 }
 
-.navbar-nav {
-    height: 60px !important;
-}
-
-.navbar-toggler{
-    border: solid 1px var(--color-white);
+.navbar-brand{
+    color: #fff !important;
 }
 
 .navbar-toggler-icon {
     filter: brightness(0) invert(1); /* Makes the icon white */
 }
 
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
 
-.nav-item a {
-    color: var(--color-white);
-    font-size: 1.3rem;
-    margin: 0 15px;
-    font-weight: 500;
+#offcanvasNavbar{
+    background-color: #c7beae !important;
+    color: #fff !important;
+}
+
+.nav-item a{
+    color: #fff !important;
 }
 
 .dropdown-menu {
-    --bs-dropdown-min-width: auto;
-    background-color: rgba(255,255,255, .05);
+    background-color: #c7beae !important;
     border: none;
 }
 
-.dropdown-menu .dropdown-item {
-    cursor: pointer;
+.dropdown-item:hover{
+    background-color: #f8f5f2 !important;
+    color: #c7beae !important;
 }
 
-.dropdown-menu .dropdown-item a {
-    color: var(--coolor-navbar-text);
-}
-
-.dropdown-menu .dropdown-item:active {
-    color: var(--coolor-navbar-text);
-}
-
-.dropdown-menu .dropdown-item:hover {
-    background-color: transparent;
-    color: var(--coolor-navbar-text);
-}
-
-.nav-link:focus, .nav-link:hover {
-    color: var(--coolor-navbar-text);
-}
-
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-    color: var(--coolor-navbar-text);
-}
-
-.navbar-brand {
-    padding-left: 1%;
-    font-weight: 700;
-    font-size: 1.75rem;
-    color: var(--color-white);
+.navbar-toggler {
+    display: block !important; /* Ensures visibility above 1600px */
+    z-index: 1044; /* Avoids being hidden behind other elements */
 }
 </style>
+
