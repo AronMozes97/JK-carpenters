@@ -8,19 +8,12 @@
             <div class="left">
                 <div>
                     <p>{{ $t('businessInfo.label.name') }}</p>
-                    <p>ul. kráľa Žigmunda 5869/25., <br>
-                        Dunajská Streda 929 01</p>
+                    <p>
+                        Dunajský Klátov 625,
+                        <br>
+                        Dunajský Klátov 930 21
+                    </p>
                 </div>
-                <div>
-                    <p>{{ $t('contactUs') }}</p>
-                    <i class="bi bi-instagram" onclick="window.open('https://www.instagram.com/jk_carpenters/')"></i>
-                    <i class="bi bi-facebook" onclick="window.open('https://www.facebook.com/profile.php?id=100064316940990')"></i>
-                </div>
-            </div>
-            <div class="line">
-                <div/>
-            </div>
-            <div class="center">
                 <div>
                     <p>{{ $t('businessInfo.label.identificationNumber') }}</p>
                     <p>
@@ -28,6 +21,15 @@
                         <br>
                         IČ DPH: 2120244995
                     </p>
+                </div>
+            </div>
+            <div class="line">
+                <div/>
+            </div>
+            <div class="center">
+                <div>
+                    <p>Jurányi Roland</p>
+                    <p class="tell">+421 20 886 49 15</p>
                 </div>
                 <div>
                     <p>Kántor István</p>
@@ -49,8 +51,12 @@
                     </p>
                 </div>
                 <div>
-                    <p>Jurányi Roland </p>
-                    <p class="tell">+421 20 886 49 15</p>
+                    <p>{{ $t('contactUs') }}</p>
+                    <div class="social-media-footer">
+                        <i class="bi bi-instagram" onclick="window.open('https://www.instagram.com/jk_carpenters/')"></i>
+                        <i class="bi bi-facebook"
+                           onclick="window.open('https://www.facebook.com/profile.php?id=100064316940990')"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,49 +112,50 @@ footer {
 
 .left, .center, .right {
     width: 33%;
-}
-
-.left div:nth-child(1) p:nth-child(1), .center div:nth-child(1) p:nth-child(1), .right div:nth-child(1) p:nth-child(1) {
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.left div:nth-child(1) p:nth-child(2), .center div:nth-child(1) p:nth-child(2), .right div:nth-child(1) p:nth-child(2) {
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.left div:nth-child(2) p:nth-child(1), .center div:nth-child(2), .right div:nth-child(2) {
-    font-weight: 800;
-    font-size: 18px;
-}
-
-.left div i {
-    font-size: 40px;
-    margin: 0 10px;
-}
-
-.center {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.center div {
-    width: 60%;
-    text-align: left;
+.left div:nth-child(1) p:nth-child(1),
+.right div:nth-child(1) p:nth-child(1) {
+    font-size: 14px;
+    font-weight: 700;
 }
 
-.right {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
+.left div:nth-child(1) p:nth-child(2),
+.right div:nth-child(1) p:nth-child(2) {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.left div:nth-child(2) p:nth-child(1),
+.center div p:nth-child(1),
+.right div:nth-child(2) {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.left div {
+    width: fit-content;
+    min-width: 200px;
+}
+
+.right div i {
+    font-size: 35px;
+    margin: 0 10px;
+}
+
+.center div {
+    width: fit-content;
+    min-width: 200px;
+    text-align: center;
 }
 
 .right div {
-    width: 70%;
+    width: fit-content;
+    min-width: 200px;
     text-align: left;
 }
 
@@ -163,35 +170,14 @@ footer {
     cursor: pointer;
 }
 
-@media (max-width: 960px) {
-    .center {
-        width: 40% !important;
-    }
-}
-
-@media (max-width: 878px) {
-    .right{
-        margin-left: -20px;
-    }
-}
-
-@media (max-width: 818px) {
-    .tell{
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 682px) {
-    .tell{
-        font-size: 13px;
-    }
-}
-
-@media (max-width: 666px) {
+@media (max-width: 700px) {
     .upper-section {
         display: grid;
         grid-template-rows: auto auto; /* Two rows: one for the top, one for the bottom */
         grid-template-columns: 1fr 1fr; /* Two equal columns */
+        grid-template-areas:
+        "center center"
+        "left right";
         gap: 10px; /* Optional: space between items */
         width: 100%;
         align-items: start; /* Vertically align all grid items */
@@ -199,28 +185,24 @@ footer {
     }
 
     .left {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        grid-column: 1 / 3; /* Span across both columns */
-        grid-row: 1 / 2; /* Place in the first row */
+        grid-area: left;
+    }
+
+    .left div:nth-child(1) p:nth-child(1) {
+        padding: 0;
+        margin: 0;
+    }
+
+    .left > div > p {
+        text-align: start !important;
     }
 
     .center {
-        width: 100% !important;
-        grid-column: 1 / 2; /* Place in the first column */
-        grid-row: 2 / 3; /* Place in the second row */
-        align-items: center;
+        grid-area: center;
     }
 
     .right {
-        width: 100% !important;
-        grid-column: 2 / 3; /* Place in the second column */
-        grid-row: 2 / 3; /* Place in the second row */
-        border-left: 1px solid #ffffff;
-        align-items: center;
+        grid-area: right;
     }
 
     .center div p,
@@ -228,14 +210,36 @@ footer {
         width: 100% !important;
     }
 
-
-    .line{
-        display: none !important;
+    .left, .center, .right {
+        width: 100% !important;
     }
 
-    .left div p:nth-child(1){
-        text-align: center;
-    };
+    .left > div > p, .center > div > p, .right > div > p {
+        text-align: center !important;
+    }
+
+    .right .social-media-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .line {
+        display: none !important;
+    }
 }
 
+@media (max-width: 440px) {
+    .upper-section {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "center"
+        "left"
+        "right";
+        width: 100%;
+    }
+}
 </style>

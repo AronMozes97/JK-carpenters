@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <nav class="navbar">
         <div class="container-fluid">
             <RouterLink :to="{name: 'home'}" class="navbar-brand">
-                JK-carpenters
+                JK CARPENTERS
             </RouterLink>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                     aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                  aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">JK-carpenters </h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">JK carpenters </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -39,39 +39,20 @@ document.addEventListener('DOMContentLoaded', function () {
                                 {{ $t('navbar.about') }}
                             </RouterLink>
                         </li>
-                        <vertical-line/>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                               aria-expanded="false">
-                                {{ $t('navbar.workshop') }}
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <RouterLink :to="{name: 'workshop-gallery'}" class="dropdown-item">
-                                        {{ $t('navbar.manufacture') }}
-                                    </RouterLink>
-                                </li>
-                                <li><a class="dropdown-item" href="#">{{ $t('navbar.assembly') }}</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <RouterLink :to="{name: 'gallery'}" class="nav-link">
+                                {{ $t('navbar.references') }}
+                            </RouterLink>
+                        </li><li class="nav-item">
+                            <RouterLink :to="{name: 'workshop-gallery'}" class="nav-link">
+                                {{ $t('navbar.manufacture') }}
+                            </RouterLink>
                         </li>
-                        <vertical-line/>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                               aria-expanded="false">
-                                {{ $t('navbar.vlm') }}
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">{{ $t('navbar.references') }}</a></li>
-                                <li><a class="dropdown-item" href="#">{{ $t('navbar.gallery') }}</a></li>
-                            </ul>
-                        </li>
-                        <vertical-line/>
                         <li class="nav-item">
                             <RouterLink :to="{name: 'contacts'}" class="nav-link">
                                 {{ $t('navbar.contacts') }}
                             </RouterLink>
                         </li>
-                        <vertical-line/>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                aria-expanded="false">

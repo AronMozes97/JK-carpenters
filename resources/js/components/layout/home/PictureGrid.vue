@@ -1,13 +1,14 @@
 <script setup>
 defineProps({
     content: Object,
+    position: String,
 })
 </script>
 
 <template>
     <div class="img-grid-container">
         <div class="img-grid">
-            <div class="big-img">
+            <div :class="position === 'right' ? 'big-img right' : 'big-img left'">
                 <img :src="content[0]" width="auto" height="100%" style="height: 620px" alt=""/>
             </div>
             <div class="small-img">
@@ -22,14 +23,10 @@ defineProps({
 
 <style scoped>
 .img-grid-container {
-    --top: 0;
-    position: absolute;
-    z-index: 30;
-    top: var(--top);
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .img-grid {
@@ -38,9 +35,22 @@ defineProps({
     gap: 20px;
 }
 
-.big-img {
+.big-img img {
+    max-width: 420px;
+}
+
+.big-img.right {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+}
+
+.big-img.left {
+    grid-column: 2 / 2;
+    grid-row: 1 / 3;
+}
+
+.small-img img {
+    max-width: 400px;
 }
 
 .small-img {
@@ -51,125 +61,66 @@ defineProps({
 }
 
 /* Scaling for smaller screens */
-@media (max-width: 900px) {
-    .img-grid-container {
-        scale: 0.9
-    }
-
-    .img-grid-container:nth-of-type(3) {
-       top: 1000px;
-    }
-}
-
-@media (max-width: 800px) {
-    .img-grid-container {
-        scale: 0.8
-    }
-
-    .img-grid-container:nth-of-type(3) {
-        top: 950px;
-    }
-}
-
-@media (max-width: 700px) {
-    .img-grid-container {
-        scale: 0.7
-    }
-
-    .img-grid-container:nth-of-type(3) {
-        top: 900px;
-    }
-}
-
-@media (max-width: 620px) {
-    .img-grid-container {
-        scale: 0.6
-    }
-
-    .img-grid-container:nth-of-type(3) {
-        top: 850px;
-    }
-}
-
-@media (max-width: 530px) {
-    .img-grid-container {
-        scale: .95
-    }
+@media (max-width: 1700px) {
     .img-grid {
-        display: grid;
+        column-gap: 150px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .img-grid {
+        column-gap: 50px;
+    }
+}
+
+@media (max-width: 950px) {
+    .img-grid {
+        column-gap: 10px;
+    }
+}
+
+
+@media (max-width: 900px) and (min-width: 321px) {
+    .img-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
+        row-gap: 20px;
+        column-gap: 0;
     }
 
-    .big-img {
+    .big-img.right, .big-img.left {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
-        display: flex;
-        justify-content: center;
+    }
+
+    .big-img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .small-img img {
+        max-width: 100%;
+        height: auto;
     }
 
     .small-img {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-        display: flex;
-        justify-content: center;
-    }
-
-    .small-img + .small-img {
-        grid-row: 3 / 4;
-    }
-
-    .img-grid-container:nth-of-type(2) {
-        top: 550px;
-    }
-
-    .img-grid-container:nth-of-type(3) {
-        display: none;
+        height: auto;
     }
 }
 
-@media (max-width: 485px) {
-    .img-grid-container:nth-of-type(2) {
-        top: 600px;
-    }
-}
-
-@media (max-width: 460px) {
-    .img-grid-container:nth-of-type(2) {
-        top: 650px;
-    }
-}
-@media (max-width: 450px) {
-    .img-grid-container:nth-of-type(2) {
-        top: 550px;
-    }
-
+@media (max-width: 320px) {
     .img-grid-container {
-        scale: .85
+        padding: 0 5px;
+    }
+
+    .img-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .big-img img, .small-img img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
-@media (max-width: 450px) {
-    .img-grid-container:nth-of-type(2) {
-        top: 600px;
-    }
-}
-
-@media (max-width: 380px) {
-    .img-grid-container:nth-of-type(2) {
-        top: 650px;
-    }
-}
-
-@media (max-width: 370px) {
-    .img-grid-container {
-        scale: .75
-    }
-}
-
-@media (max-width: 340px) {
-    .img-grid-container:nth-of-type(2) {
-        top: 675px;
-    }
-}
 </style>

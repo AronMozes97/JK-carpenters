@@ -2,7 +2,7 @@
     "navbar": {
         "about": "Rólunk",
         "workshop": "Műhely",
-        "manufacture": "Gyártás",
+        "manufacture": "Műhely",
         "assembly": "Összeszerelés",
         "references": "Referenciák",
         "gallery": "Galéria",
@@ -11,15 +11,15 @@
     "businessInfo": {
         "contact": "Kapcsolat",
         "label": {
-            "name": "Cégnév",
+            "name": "",
             "seat": "Székhely",
-            "identificationNumber": "Identifikációs szám (IČO)",
+            "identificationNumber": "Identifikációs szám",
             "taxNumber": "Adószám (IČ DPH)",
             "companyRegistrationNumber": "Cégjegyzékszám",
             "office": "Telephely"
         },
         "text": {
-            "name": "JK Carpenters s.r.o",
+            "name": "JK CARPENTERS s.r.o",
             "seat": "ul. kráľa Žigmunda 5869/25.\n Dunajská Streda 929 01",
             "identificationNumber": "50 249 011",
             "taxNumber": "2120244995",
@@ -59,7 +59,7 @@
                 "description2": "A kész bútorokra többéves garanciát biztosítunk a minőség garanciájaként. A legjobb bútorvasalat gyártókkal dolgozunk, mint a BLUM, Häfele, ICA és Kesseböhmer."
             },
             "section2": {
-                "title": " ",
+                "title": "",
                 "description1": "Kreatív és tapasztalt csapatunk van, amely nem riad vissza az Ön igényeinek megvalósításától. Nyitottak vagyunk az új ötletekre, és modern technológiák segítségével olyan magas minőségű bútorokat készítünk, amelyek generációkat érnek meg.",
                 "description2": "Belsőépítészeti stúdiókkal működünk együtt, akiknek egyedi bútorokat gyártunk. Megbízható partnere vagyunk építészeknek és belsőépítési kivitelezőknek."
             }
@@ -92,6 +92,13 @@
                 "inputText": "Üzenet"
             }
         }
+    },
+    "/workshop": {
+        "label": "Gyártás",
+        "text": "A bútort először a műhelyben összeszereljük, hogy biztosak lehessünk benne, hogy sem minket, sem az ügyfelet nem éri kellemetlen meglepetés a szerelés során."
+    },
+    "/reference": {
+        "label": "Referenciák"
     },
     "/contacts": {
         "label": "asd"

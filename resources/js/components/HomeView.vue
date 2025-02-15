@@ -20,13 +20,12 @@ import InstagramFeed from "@/components/layout/home/InstagramFeed.vue";
             </div>
             <div class="header-img">
                 <img
-                    src="@public/img/home/homeWelcome_v2.png"
-                    class="d-block w-100" alt="JK carpenters">
+                    src="@public/img/home/homeWelcome.jpg"
+                    class="d-block w-100" alt="JK CARPENTERS">
             </div>
         </div>
 
         <div class="home-our-works" id="ourWorks">
-            <img src="@public/svg/homePageRectangle.svg" alt="My Happy SVG" class="bg" style="pointer-events: none;"/>
             <div class="all-elements">
                 <div class="text-area">
                     <div class="content-box">
@@ -42,7 +41,8 @@ import InstagramFeed from "@/components/layout/home/InstagramFeed.vue";
                         </p>
                     </div>
                     <div class="content-box">
-                        <h1 class="title">{{ $t('/home.aboutUs.section2.title') }}</h1><!--just to fill this line so the 2nd column start at the same height-->
+                        <!--just to fill this line so the 2nd column start at the same height-->
+                        <h1 class="title">{{ $t('/home.aboutUs.section2.title') }}</h1>
                         <p class="description">
                             {{ $t('/home.aboutUs.section2.description1') }}
                         </p>
@@ -51,15 +51,17 @@ import InstagramFeed from "@/components/layout/home/InstagramFeed.vue";
                         </p>
                     </div>
                 </div>
-                <PictureGrid
-                    v-for="item in content"
-                    :style="{'&#45;&#45;top': item.top}"
-                    :content="item.images"/>
+                <div class="picture-area">
+                    <PictureGrid
+                        v-for="item in content"
+                        :content="item.images"
+                        :position="item.position"/>
+                </div>
             </div>
 
         </div>
 
-        <h1 style="margin-left: 15%">
+        <h1 style="margin-left: 15%; font-size: 25px">
             <a href="#">
                 {{ $t('/home.morePictures.1') }}
                 <br>
@@ -76,11 +78,11 @@ import InstagramFeed from "@/components/layout/home/InstagramFeed.vue";
 </template>
 <script>
 import imgLong from '@public/img/home/CARP.png'
-import imgLong2 from '@public/img/home/CARP2.png'
-import imgSmall11 from '@public/img/home/Carp_fekt.png'
-import imgSmall12 from '@public/img/home/Carp_fekt2.png'
-import imgSmall21 from '@public/img/home/Carp_fekt3.png'
-import imgSmall22 from '@public/img/home/Carp_fekt4.png'
+import imgLong2 from '@public/img/home/D8.jpg'
+import imgSmall11 from '@public/img/home/F13.jpg'
+import imgSmall12 from '@public/img/home/Carp_fekt4.png'
+import imgSmall21 from '@public/img/home/Carp_fekt.png'
+import imgSmall22 from '@public/img/home/E2.jpg'
 
 export default {
     data() {
@@ -88,22 +90,22 @@ export default {
             content: [
                 {
                     id: 0,
-                    top: '400px',
                     images: {
                         0: imgLong,
                         1: imgSmall11,
                         2: imgSmall12,
-                    }
+                    },
+                    position: 'right'
 
                 },
                 {
                     id: 0,
-                    top: '1100px',
                     images: {
                         0: imgLong2,
                         1: imgSmall21,
                         2: imgSmall22,
-                    }
+                    },
+                    position: 'left'
                 }
             ]
         };
@@ -120,7 +122,7 @@ a {
 }
 
 a:hover {
-    color: var(--color-dark-braun);
+    color: #c7beae;
 }
 
 .container-fluid {
@@ -168,66 +170,30 @@ a:hover {
     z-index: 15;
 }
 
-.home-profile {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-    margin-top: 2%;
-}
-
-.main-profile-wrapper {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    margin-top: 25px;
-    padding-bottom: 25px;
-}
-
 /*content*/
 .home-our-works {
-    position: relative;
     width: 100%;
     height: fit-content;
     background-color: #c5beb4;
     z-index: 10;
-    padding-bottom: 1900px;
+    padding-bottom: 50px;
     margin-bottom: 50px;
-    margin-top: 100px;
-}
-
-.home-our-works .bg {
-    position: absolute;
-    bottom: -1px;
-    right: 0;
-    background-image: url("@public/svg/homePageRectangle.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat !important;
-    width: 100%;
-    height: auto;
-    z-index: 20;
 }
 
 .home-our-works .text-area {
-    position: absolute;
     display: flex;
     justify-content: center;
-    align-items: start;
-    z-index: 30;
-    width: 90%;
-    max-height: 300px;
-    top: 2%;
-    left: 5%;
+    align-items: center;
+    flex-direction: column;
 }
 
-.content-box {
+.home-our-works .content-box {
     padding: 20px;
-    width: 30%;
+    width: 80%;
+}
+
+.home-our-works .content-box:nth-child(2) {
+    padding-top: 0;
 }
 
 .title {
@@ -251,9 +217,20 @@ a:hover {
     color: #fff;
 }
 
+.picture-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
 @media (max-width: 1700px) {
     .header-img {
         top: -35%;
+    }
+
+    .picture-area{
+        flex-direction: column;
     }
 }
 
@@ -319,12 +296,6 @@ a:hover {
     }
 }
 
-@media (max-width: 900px) {
-    .home-our-works {
-        padding-bottom: 1700px;
-    }
-}
-
 @media (max-width: 850px) {
     .header-text h1 {
         font-size: 3rem;
@@ -339,10 +310,6 @@ a:hover {
     .content-box {
         width: 50%;
     }
-
-    .home-our-works {
-        padding-bottom: 1500px;
-    }
 }
 
 @media (max-width: 650px) {
@@ -352,12 +319,6 @@ a:hover {
 
     .header-text p {
         font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 530px) {
-    .home-our-works {
-        padding-bottom: 1900px;
     }
 }
 

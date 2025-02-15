@@ -15,7 +15,7 @@ const images = [
 
 <template>
     <div class="holder">
-        <h1 class="text-dark mb-4">Instagram</h1>
+        <h1 class="mb-4">Instagram</h1>
         <div class="insta-images" onclick="window.open('https://www.instagram.com/jk_carpenters/', '_blank');">
             <img v-for="image in images" :src="image" width="230" height="230">
         </div>
@@ -41,8 +41,8 @@ const images = [
         gap: 20px;
     }
 
-    .insta-images img{
-        border: solid var(--color-dark-gray) 10px;
+    h1 {
+        color: var(--color-gray-text);
     }
 
     @media (max-width: 978px) {
