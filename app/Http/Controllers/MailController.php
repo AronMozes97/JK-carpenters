@@ -22,7 +22,6 @@ class MailController extends Controller
             'email' => $request->input('email'),
             'message' => $request->input('message'),
         ];
-
-        Mail::to(@self::CONTACT_MAIL)->send(new Contact($data));
+        Mail::to(self::CONTACT_MAIL)->send(new Contact($data));
     }
 }
