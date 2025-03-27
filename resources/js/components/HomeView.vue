@@ -30,14 +30,14 @@ import InstagramFeed from "@/components/layout/home/InstagramFeed.vue";
                 <div class="text-area">
                     <div class="content-box">
                         <h1 class="title">{{ $t('/home.aboutUs.section1.title') }}</h1>
-                        <p class="subtitle">
-                            {{ $t('/home.aboutUs.section1.subtitle') }}
-                        </p>
                         <p class="description">
                             {{ $t('/home.aboutUs.section1.description1') }}
                         </p>
                         <p class="description">
                             {{ $t('/home.aboutUs.section1.description2') }}
+                        </p>
+                        <p class="description">
+                            {{ $t('/home.aboutUs.section1.description3') }}
                         </p>
                     </div>
                     <div class="content-box">
@@ -62,11 +62,11 @@ import InstagramFeed from "@/components/layout/home/InstagramFeed.vue";
         </div>
 
         <h1 style="margin-left: 15%; font-size: 25px">
-            <a href="#">
+            <RouterLink :to="{name: 'gallery'}">
                 {{ $t('/home.morePictures.1') }}
                 <br>
                 {{ $t('/home.morePictures.2') }}
-            </a>
+            </RouterLink>
         </h1>
 
         <ContactForm/>
@@ -298,10 +298,12 @@ a:hover {
 
 @media (max-width: 850px) {
     .header-text h1 {
-        font-size: 3rem;
+        text-align: center;
+        font-size: 2.5rem;
     }
 
     .header-text p {
+        text-align: center;
         font-size: 1.5rem;
     }
 }
@@ -333,6 +335,7 @@ a:hover {
 
     .header-text p {
         font-size: 1rem;
+
     }
 
     .content-box {

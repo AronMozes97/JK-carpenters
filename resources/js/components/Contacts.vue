@@ -46,14 +46,25 @@
         </div>
         <div class="map">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d719.7722367087862!2d17.7416781!3d47.98551!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476b75946f5d4385%3A0x5063689c08795d16!2sJK%20Carpenters%20s.r.o.!5e1!3m2!1ssk!2ssk!4v1739644003183!5m2!1ssk!2ssk"
-                width="570" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                width="600"
+                height="450"
+                style="border:0;"
+                loading="lazy"
+                allowfullscreen
+                :src="mapSrc">
+            </iframe>
         </div>
-
     </div>
-
 </template>
+<script>
+export default {
+    data() {
+        return {
+            mapSrc: "https://www.google.com/maps/embed/v1/place?key=AIzaSyBYvoVnxPh0C78Od1NfHXOieyFV7UD1t6c&q=47.98589380112105,17.741456051044178"
+        };
+    }
+};
+</script>
 <style scoped>
 .contacts {
     position: relative;

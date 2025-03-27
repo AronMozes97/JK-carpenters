@@ -46,7 +46,7 @@ const closeImage = () => {
     align-items: center;
     flex-direction: column;
     color: var(--color-gray-text);
-    padding-top: 10px;
+    margin-top: 20px;
 }
 
 .gallery p:first-of-type {

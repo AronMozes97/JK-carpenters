@@ -13,14 +13,14 @@
         "label": {
             "name": "",
             "seat": "Székhely",
-            "identificationNumber": "Identifikációs szám",
+            "identificationNumber": "Identifikációs szám (IČO)",
             "taxNumber": "Adószám (IČ DPH)",
             "companyRegistrationNumber": "Cégjegyzékszám",
             "office": "Telephely"
         },
         "text": {
             "name": "JK CARPENTERS s.r.o",
-            "seat": "ul. kráľa Žigmunda 5869/25.\n Dunajská Streda 929 01",
+            "seat": "Dunajský Klátov 625, Dunajský Klátov 930 21",
             "identificationNumber": "50 249 011",
             "taxNumber": "2120244995",
             "companyRegistrationNumber": "OR OS Trnava, odd. s.r.o, vložka č. 37438/T",
@@ -31,9 +31,9 @@
     "rightsReserved": "Minden jog fenntartva",
     "/home": {
         "homeHeaderText": {
-            "1": "Egyedi Bútor",
+            "1": "Egyedi bútorok",
             "2": "",
-            "3": "A funkcionális, egyedi design bútorok.",
+            "3": "Funkcionális, méretreszabott bútorok tervezése és kivitelezése.\n",
             "4": ""
         },
         "mainProfile": {
@@ -54,9 +54,9 @@
         "aboutUs": {
             "section1": {
                 "title": "Rólunk...",
-                "subtitle": "Különleges bútorok gyártására és beszerelésére specializálódtunk, melyek egyaránt funkcionálisak és dizájnosak.",
-                "description1": "Munkánk a precizitásról szól, amelyet a korszerű technológiák alkalmazásával érünk el.",
-                "description2": "A kész bútorokra többéves garanciát biztosítunk a minőség garanciájaként. A legjobb bútorvasalat gyártókkal dolgozunk, mint a BLUM, Häfele, ICA és Kesseböhmer."
+                "description1": "Cégünk több mint 25 éve foglalkozik bútorok gyártásával és beszerelésével. Célunk hogy a praktikum és a design harmóniáját szem előtt tartva, létrehozzunk egy olyan egyedi bútort, ami tökéletesen illeszkedik a megrendelő igényeihez, hétköznapi szokásaihoz, valamint lakásának sajátos méreteihez, lehetőségeihez. Kreatív és tapasztalt csapatunk\nnem riad vissza az Ön igényeinek megvalósításától.",
+                "description2": "A legjob bútorvasalat gyártókkal dolgozunk, mint a Blum, Häfele, Kesseböhmer...",
+                "description3": "Megbízható partnere vagyunk építészeknek és belsőépítészeti stúdióknak, kivitelezőknek."
             },
             "section2": {
                 "title": "",
@@ -69,9 +69,9 @@
             "2": "további képekért..."
         },
         "contactForm": {
-            "title1": "Kérjen",
-            "title2": "ajánlatot még ma!",
-            "description": "Cégünk Termékeiet és szolgáltatásait magas színvonalon képviseljük a külpiacokon is. Személyes egyeztetésért vegye fel velünk a kapcsolatot.",
+            "title1": "Személyes",
+            "title2": "egyeztetésért",
+            "description": "vegye fel velünk a kapcsolatot még ma!",
             "nameInput": {
                 "message": "Add meg a neved!",
                 "inputText": "Név"

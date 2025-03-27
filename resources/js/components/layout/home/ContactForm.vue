@@ -61,6 +61,14 @@ window.onload = function () {
 
 <template>
     <div class="holder">
+        <div class="phone-label text-center d-none">
+            <h1>
+                {{ $t('/home.contactForm.title1') }}
+                {{ $t('/home.contactForm.title2') }}
+            </h1>
+            <p>{{ $t('/home.contactForm.description') }}
+            </p>
+        </div>
         <div class="contact-us" id="contactUs">
             <div class="innerPart">
                 <div class="text-holder">
@@ -105,6 +113,7 @@ window.onload = function () {
     align-items: center;
     background-color: #f8f5f2;
     padding: 80px 0;
+    flex-direction: row;
 }
 
 .contact-us {
@@ -159,7 +168,7 @@ window.onload = function () {
     align-items: start;
 }
 
-.text-holder * {
+.text-holder *, .phone-label {
     color: #F9F5EF;
 }
 
@@ -202,22 +211,71 @@ window.onload = function () {
     }
 }
 
+@media (max-width: 500px) {
+    .holder{
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .phone-label{
+        display: block !important;
+        color: #a09a92;
+
+    }
+
+    .text-holder h1, .text-holder p {
+        display: none;
+    }
+
+    .from-holder{
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .text-holder h1 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 470px) {
+    .text-holder p {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .text-holder h1 {
+        font-size: 23px;
+    }
+}
+
 @media (max-width: 420px) {
     .btn {
         width: 100px;
     }
 
-    .from-holder {
+    /*.from-holder {
         left: 1%;
         width: 56%;
-    }
+    }*/
 
     .text-holder h1 {
+        font-size: 20px;
         padding: 0 0 0 5%;
     }
 
     .text-holder p {
+        font-size: 13px;
         padding: 0 0 0 5%;
+    }
+}
+
+@media (max-width: 350px) {
+    .text-holder h1 {
+        font-size: 17px;
     }
 }
 
