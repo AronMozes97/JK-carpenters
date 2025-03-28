@@ -1,51 +1,107 @@
 {
-    "navbar" : {
+    "navbar": {
         "about": "O nás",
         "workshop": "Dielňa",
-        "manufacture": "Výroba",
+        "manufacture": "Dielňa",
         "assembly": "Montáž",
         "references": "Referencie",
         "gallery": "Galéria",
-        "contacts": "Kontakty"
+        "contacts": "Kontakt"
     },
-
-    "footer" : {
-        "businessInfo": {
-            "label": {
-                "name": "Názov spoločnosti",
-                "seat": "Sídlo",
-                "identificationNumber": "Identifikačné číslo (IČO)",
-                "taxNumber": "DIČ (IČ DPH)",
-                "companyRegistrationNumber": "Číslo obchodného registra",
-                "office": "Prevádzka"
-            },
-            "text": {
-                "name": "JK Carpenters s.r.o",
-                "seat": "ul. kráľa Žigmunda 5869/25.\n Dunajská Streda 929 01",
-                "identificationNumber": "50 249 011",
-                "taxNumber": "2120244995",
-                "companyRegistrationNumber": "OR OS Trnava, odd. s.r.o, vložka č. 37438/T",
-                "office": "PPD Trhové Mýto, Dolnobarská 407.930 13 Trhová Hradská"
-            }
+    "businessInfo": {
+        "contact": "Kontakt",
+        "label": {
+            "name": "",
+            "seat": "Sídlo",
+            "identificationNumber": "Identifikačné číslo (IČO)",
+            "taxNumber": "Daňové číslo (IČ DPH)",
+            "companyRegistrationNumber": "Registračné číslo spoločnosti",
+            "office": "Prevádzka"
+        },
+        "text": {
+            "name": "JK CARPENTERS s.r.o",
+            "seat": "Dunajský Klátov 625, Dunajský Klátov 930 21",
+            "identificationNumber": "50 249 011",
+            "taxNumber": "2120244995",
+            "companyRegistrationNumber": "OR OS Trnava, odd. s.r.o, vložka č. 37438/T",
+            "office": "PPD Trhové Mýto, Dolnobarská 407 930 13 Trhová Hradská"
         }
     },
-
-    "/home":  {
-        "homeHeaderText": "<p>JK-Carpenters vyrába vysoko kvalitný </p>\n<p> nábytok a stolárske riešenia na mieru.</p>\n<p>S odbornými znalosťami realizujeme vaše predstavy.</p>",
+    "contactUs": "Napíšte nám",
+    "rightsReserved": "Všetky práva vyhradené",
+    "/home": {
+        "homeHeaderText": {
+            "1": "Nábytok na mieru",
+            "2": "",
+            "3": "Návrh a výroba funkčného, na mieru prispôsobeného nábytku.",
+            "4": ""
+        },
         "mainProfile": {
             "label": "Náš hlavný profil",
             "custom_furniture": {
                 "label": "Nábytok na mieru",
-                "text": "Stolárske práce, kuchynský nábytok, obývací nábytok, skrine s posuvnými dverami, šatníky, kancelársky nábytok, kúpeľňový nábytok, vstavané skrine, detský nábytok, policové systémy, okná a dvere."
+                "text": "Stolárske práce, kuchynský nábytok, obývací nábytok, vstavané skrine s posuvnými dverami, šatníky, kancelársky nábytok, kúpeľňový nábytok, detský nábytok, policové systémy, dvere a okná."
             },
             "interior_joinery": {
                 "label": "Interiérové stolárske práce",
-                "text": "Kompletná realizácia interiérových stolárskych prác (zameranie, návrh nábytku na mieru, výroba, doprava, montáž) v spolupráci s našimi odbornými stolármi podľa individuálnych potrieb."
+                "text": "Kompletná realizácia interiérových stolárskych prác (zameranie, návrh nábytku na mieru, výroba, doprava a montáž na mieste) v spolupráci s našimi odbornými stolármi podľa individuálnych požiadaviek."
             },
             "quality_guaranteed": {
                 "label": "Záruka kvality",
-                "text": "Na vyrobený nábytok poskytujeme viacročnú záruku, čím potvrdzujeme jeho kvalitu. Nepoužívame materiály nízkej kvality, ktoré sa často vyskytujú v stolárskom priemysle."
+                "text": "Na náš nábytok poskytujeme niekoľkoročnú záruku, čím zaručujeme jeho kvalitu. Nepoužívame nekvalitné materiály bežné v stolárskom priemysle."
+            }
+        },
+        "aboutUs": {
+            "section1": {
+                "title": "O nás...",
+                "description1": "Naša spoločnosť sa viac ako 25 rokov venuje výrobe a montáži nábytku. Naším cieľom je vytvoriť nábytok na mieru, ktorý dokonale vyhovuje potrebám zákazníka, jeho každodenným návykom a špecifickým rozmerom a možnostiam jeho domova, pričom dbáme na harmóniu medzi praktickosťou a dizajnom. Náš kreatívny a skúsený tím sa nebojí realizovať vaše predstavy.",
+                "description2": "Spolupracujeme s najlepšími výrobcami nábytkového kovania, ako sú Blum, Häfele, Kesseböhmer...",
+                "description3": "Sme spoľahlivým partnerom pre architektov, interiérové štúdiá a dodávateľov."
+            },
+            "section2": {
+                "title": "",
+                "description1": "Máme kreatívny a skúsený tím, ktorý sa nebojí realizovať vaše predstavy. Sme otvorení novým nápadom a vďaka moderným technológiám vyrábame vysokokvalitný nábytok, ktorý vydrží generácie.",
+                "description2": "Spolupracujeme s interiérovými štúdiami, pre ktoré vyrábame nábytok na mieru. Sme spoľahlivým partnerom pre architektov a interiérových dodávateľov."
+            }
+        },
+        "morePictures": {
+            "1": "Kliknite",
+            "2": "pre viac obrázkov..."
+        },
+        "contactForm": {
+            "title1": "Pre osobnú",
+            "title2": "konzultáciu",
+            "description": "Kontaktujte nás ešte dnes!",
+            "nameInput": {
+                "message": "Zadajte svoje meno!",
+                "inputText": "Meno"
+            },
+            "businessName": {
+                "inputText": "Názov spoločnosti"
+            },
+            "telInput": {
+                "message": "Zadajte svoje telefónne číslo!",
+                "inputText": "Telefónne číslo"
+            },
+            "emailInput": {
+                "message": "Zadajte svoju e-mailovú adresu!",
+                "inputText": "E-mailová adresa"
+            },
+            "messageInput": {
+                "message": "Napíšte svoju správu!",
+                "inputText": "Správa"
             }
         }
-    }
+    },
+    "/workshop": {
+        "label": "Výroba",
+        "text": "Nábytok je najprv zostavený v dielni, aby sme sa uistili, že pri montáži nevzniknú žiadne nepríjemné prekvapenia ani pre nás, ani pre zákazníka."
+    },
+    "/reference": {
+        "label": "Referencie"
+    },
+    "/contacts": {
+        "label": "Kontakt"
+    },
+    "send": "Odoslať"
 }

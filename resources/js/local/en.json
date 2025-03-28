@@ -1,51 +1,107 @@
 {
-    "navbar" : {
+    "navbar": {
         "about": "About Us",
         "workshop": "Workshop",
-        "manufacture": "Manufacture",
+        "manufacture": "Workshop",
         "assembly": "Assembly",
         "references": "References",
         "gallery": "Gallery",
         "contacts": "Contacts"
     },
-
-    "footer" : {
-        "businessInfo": {
-            "label": {
-                "name": "Company Name",
-                "seat": "Seat",
-                "identificationNumber": "Identification Number (IČO)",
-                "taxNumber": "Tax Number (IČ DPH)",
-                "companyRegistrationNumber": "Company Registration Number",
-                "office": "Branch Office"
-            },
-            "text": {
-                "name": "JK Carpenters s.r.o",
-                "seat": "Dunajský Klátov 625, Dunajský Klátov 930 21",
-                "identificationNumber": "50 249 011",
-                "taxNumber": "2120244995",
-                "companyRegistrationNumber": "OR OS Trnava, odd. s.r.o, vložka č. 37438/T",
-                "office": "PPD Trhové Mýto, Dolnobarská 407.930 13 Trhová Hradská"
-            }
+    "businessInfo": {
+        "contact": "Contact",
+        "label": {
+            "name": "",
+            "seat": "Headquarters",
+            "identificationNumber": "Identification Number (IČO)",
+            "taxNumber": "Tax Number (IČ DPH)",
+            "companyRegistrationNumber": "Company Registration Number",
+            "office": "Office"
+        },
+        "text": {
+            "name": "JK CARPENTERS s.r.o",
+            "seat": "Dunajský Klátov 625, Dunajský Klátov 930 21",
+            "identificationNumber": "50 249 011",
+            "taxNumber": "2120244995",
+            "companyRegistrationNumber": "OR OS Trnava, sec. s.r.o, entry no. 37438/T",
+            "office": "PPD Trhové Mýto, Dolnobarská 407 930 13 Trhová Hradská"
         }
     },
-
-    "/home":  {
-        "homeHeaderText": "<p>JK-Carpenters creates custom, high-quality </p>\n<p> furniture and carpentry solutions.</p>\n<p>We bring your ideas to life with expertise.</p>",
+    "contactUs": "Contact Us",
+    "rightsReserved": "All rights reserved",
+    "/home": {
+        "homeHeaderText": {
+            "1": "Custom Furniture",
+            "2": "",
+            "3": "Design and production of functional, tailor-made furniture.",
+            "4": ""
+        },
         "mainProfile": {
             "label": "Our Main Profile",
             "custom_furniture": {
                 "label": "Custom Furniture",
-                "text": "Carpentry, custom furniture, kitchen furniture, living room furniture, sliding door wardrobes, wardrobes, office furniture, bathroom furniture, built-in wardrobes, children's room furniture, shelving systems, windows, and doors."
+                "text": "Carpentry and joinery work, kitchen furniture, living room furniture, sliding door wardrobes, closets, office furniture, bathroom furniture, built-in wardrobes, children's room furniture, shelving systems, doors and windows."
             },
             "interior_joinery": {
                 "label": "Interior Joinery",
-                "text": "Complete execution of interior joinery (survey, custom furniture design, manufacturing, delivery, on-site assembly) by our carpenters according to individual requirements."
+                "text": "Complete implementation of interior joinery (survey, custom furniture design, manufacturing, delivery, and on-site installation) by our expert carpenters, tailored to individual needs."
             },
             "quality_guaranteed": {
                 "label": "Quality Guarantee",
-                "text": "We offer a multi-year guarantee on our finished furniture, further proving its quality. We do not use low-quality materials that are often found in the carpentry industry."
+                "text": "We offer several years of warranty on our completed furniture, ensuring quality. We do not use low-quality materials commonly found in the carpentry industry."
+            }
+        },
+        "aboutUs": {
+            "section1": {
+                "title": "About Us...",
+                "description1": "Our company has been manufacturing and installing furniture for more than 25 years. Our goal is to create custom furniture that perfectly fits our clients' needs, everyday habits, and the specific dimensions and possibilities of their homes, always keeping practicality and design in harmony. Our creative and experienced team is not afraid to bring your ideas to life.",
+                "description2": "We work with the best furniture hardware manufacturers, such as Blum, Häfele, Kesseböhmer...",
+                "description3": "We are a reliable partner for architects, interior design studios, and contractors."
+            },
+            "section2": {
+                "title": "",
+                "description1": "Our creative and experienced team is open to new ideas and uses modern technologies to produce high-quality furniture that lasts for generations.",
+                "description2": "We collaborate with interior design studios to create custom furniture. We are a trusted partner for architects and interior design contractors."
+            }
+        },
+        "morePictures": {
+            "1": "Click",
+            "2": "for more pictures..."
+        },
+        "contactForm": {
+            "title1": "For a Personal",
+            "title2": "Consultation",
+            "description": "Get in touch with us today!",
+            "nameInput": {
+                "message": "Enter your name!",
+                "inputText": "Name"
+            },
+            "businessName": {
+                "inputText": "Company Name"
+            },
+            "telInput": {
+                "message": "Enter your phone number!",
+                "inputText": "Phone Number"
+            },
+            "emailInput": {
+                "message": "Enter your email address!",
+                "inputText": "Email Address"
+            },
+            "messageInput": {
+                "message": "Write your message!",
+                "inputText": "Message"
             }
         }
-    }
+    },
+    "/workshop": {
+        "label": "Manufacturing",
+        "text": "The furniture is first assembled in our workshop to ensure that neither we nor the customer face any unpleasant surprises during installation."
+    },
+    "/reference": {
+        "label": "References"
+    },
+    "/contacts": {
+        "label": "Contacts"
+    },
+    "send": "Send"
 }

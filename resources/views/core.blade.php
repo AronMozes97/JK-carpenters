@@ -38,6 +38,11 @@
         }
     </script>
 
+    <script>
+        const emailApiUrl = "{{ route('send.contact.mail') }}";
+    </script>
+    <script src="http://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
     <!-- Favicon -->
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
 

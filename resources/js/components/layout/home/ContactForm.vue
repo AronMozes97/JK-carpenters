@@ -38,9 +38,8 @@ window.onload = function () {
         });
 
         if (isValid) {
-            const apiUrl = route('send.contact.mail');
             $.ajax({
-                url: apiUrl,
+                url: emailApiUrl,
                 method: "GET",
                 data: {
                     name: $('#nameInput').val(),
