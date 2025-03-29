@@ -29,11 +29,11 @@
             <div class="center">
                 <div>
                     <p>Jurányi Roland</p>
-                    <p class="tell">+421 20 886 49 15</p>
+                    <p class="tell">+421 905 989 008</p>
                 </div>
                 <div>
                     <p>Kántor István</p>
-                    <p class="tell">+421 20 886 49 15 </p>
+                    <p class="tell">+421 905 704 980</p>
                 </div>
             </div>
             <div class="line">
