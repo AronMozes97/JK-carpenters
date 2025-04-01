@@ -54,14 +54,14 @@
         "aboutUs": {
             "section1": {
                 "title": "About Us...",
-                "description1": "Our company has been manufacturing and installing furniture for more than 25 years. Our goal is to create custom furniture that perfectly fits our clients' needs, everyday habits, and the specific dimensions and possibilities of their homes, always keeping practicality and design in harmony. Our creative and experienced team is not afraid to bring your ideas to life.",
-                "description2": "We work with the best furniture hardware manufacturers, such as Blum, Häfele, Kesseböhmer...",
-                "description3": "We are a reliable partner for architects, interior design studios, and contractors."
+                "description1": "<b>25 years of experience and growth</b><br>  Our company has been creating and installing furniture for over 25 years, always maintaining the highest professional standards. Over the years, we have continuously evolved to meet the needs of the modern era while preserving our commitment to quality and reliability. Our goal is to combine your ideas with practical and aesthetic solutions, crafting furniture that perfectly fits the characteristics of your home and your lifestyle.",
+                "description2": "<b>Harmony of ideas and functionality</b><br>  Our experienced team approaches every project with creative vision and a progressive attitude. We work with the finest furniture hardware manufacturers – such as Blum, Häfele, and Kessebömer – to offer durable, innovative, and functional furniture. Modern technologies and thorough execution go hand in hand for us because we believe that careful work and forward-looking ideas create lasting value together.",
+                "description3": "<b>A reliable partner in design and execution</b><br> We are a trusted partner for architects, interior design studios, and contractors who can count on our expertise, precision, and creative problem-solving skills. We are open to new opportunities and take on every task with the aim of delivering the best under the banner of professionalism, creativity, and continuous development. If you are looking for furniture that reflects harmony between expertise, innovation, and quality, you will find what you are looking for with us."
             },
             "section2": {
                 "title": "",
-                "description1": "Our creative and experienced team is open to new ideas and uses modern technologies to produce high-quality furniture that lasts for generations.",
-                "description2": "We collaborate with interior design studios to create custom furniture. We are a trusted partner for architects and interior design contractors."
+                "description1": "",
+                "description2": ""
             }
         },
         "morePictures": {

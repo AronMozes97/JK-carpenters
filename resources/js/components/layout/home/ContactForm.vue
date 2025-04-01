@@ -125,7 +125,6 @@ window.onload = function () {
 }
 
 .innerPart {
-    #background-color: #e3dbce;
     width: 80%;
     height: 100%;
     margin: 150px 0 150px 0;

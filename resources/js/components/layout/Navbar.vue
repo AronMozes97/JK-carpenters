@@ -1,8 +1,8 @@
 <script setup>
 import {getCurrentLanguage} from '@/stores/languages.js';
-import verticalLine from '../smallElements/VerticalLine.vue'
 </script>
 <script>
+
 document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('click', function (event) {
         const offcanvasElement = document.getElementById('offcanvasNavbar');

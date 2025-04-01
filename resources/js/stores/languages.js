@@ -1,9 +1,8 @@
 import {defineStore} from "pinia";
-import {computed} from "vue";
 
 export const useLanguageStore = defineStore('language', {
     state: () => ({
-        locale: 'HU'
+        locale: 'SK'
     }),
     actions: {
         setLocale(locale) {
@@ -12,10 +11,10 @@ export const useLanguageStore = defineStore('language', {
     }
 })
 
-export const getCurrentLanguage = ($i18n, index) => {
+export const getCurrentLanguage = (i18n, index) => {
     let sort = [];
 
-    switch ($i18n) {
+    switch (i18n) {
         case 'EN':
             sort = ['EN', 'SK', 'HU'];
             break;

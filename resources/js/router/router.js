@@ -25,13 +25,12 @@ const routes = [
         path: '/reference',
         name: 'gallery',
         component: Gallery
-
     },
-    /*{
-        path: '/:pathMatch(.*)',
-        component: NotFound
-    }*/
-]
+    {
+        path: "/:pathMatch(.*)", // Fall-back to NotFound or redirect
+        redirect: (to) => `/` // Redirect to default language
+    },
+];
 
 const router = createRouter({
     history:    createWebHistory(),

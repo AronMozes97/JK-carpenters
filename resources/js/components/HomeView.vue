@@ -30,15 +30,11 @@ import InstagramFeed from "@/components/layout/home/InstagramFeed.vue";
                 <div class="text-area">
                     <div class="content-box">
                         <h1 class="title">{{ $t('/home.aboutUs.section1.title') }}</h1>
-                        <p class="description">
-                            {{ $t('/home.aboutUs.section1.description1') }}
-                        </p>
-                        <p class="description">
-                            {{ $t('/home.aboutUs.section1.description2') }}
-                        </p>
-                        <p class="description">
-                            {{ $t('/home.aboutUs.section1.description3') }}
-                        </p>
+                        <p class="description" v-html="$t('/home.aboutUs.section1.description1')"></p>
+                        <br>
+                        <p class="description" v-html="$t('/home.aboutUs.section1.description2')"></p>
+                        <br>
+                        <p class="description" v-html="$t('/home.aboutUs.section1.description3')"></p>
                     </div>
                     <div class="content-box">
                         <!--just to fill this line so the 2nd column start at the same height-->
@@ -174,7 +170,7 @@ a:hover {
 .home-our-works {
     width: 100%;
     height: fit-content;
-    background-color: #c5beb4;
+    background-color: #c7beae;
     z-index: 10;
     padding-bottom: 50px;
     margin-bottom: 50px;
@@ -188,7 +184,7 @@ a:hover {
 }
 
 .home-our-works .content-box {
-    padding: 20px;
+    padding: 20px 10px;
     width: 80%;
 }
 

@@ -7,19 +7,19 @@
 
     <title>JK CARPENTES</title>
     <link rel="icon" href="{{ asset('/img/logo.jpg') }}" type="image/png">
-    <meta name="description" content="JK CARPENTERS ponúkajú odborné tesárske služby vrátane nábytku na mieru, práce s drevom a renovácií na Slovensku. Kontaktujte nás pre kvalitnú remeselnú prácu.">
-    <meta name="keywords" content="Tesárske služby, Nábytok na mieru, Práca s drevom, Odborní tesári, Slovensko, Tesárske renovácie">
+    <meta name="description" content="JK CARPENTERS ponúkajú odborné nábytkárske práce vrátane nábytku na mieru. Kontaktujte nás pre kvalitnú remeselnú prácu.">
+    <meta name="keywords" content="Nábytkárske práce, Nábytok na mieru, Odborní nábytkári, Slovensko">
     <meta name="author" content="JK CARPENTERS">
 
-    <meta property="og:title" content="JK CARPENTERS - Odborné tesárske služby na Slovensku" />
-    <meta property="og:description" content="Špecializujeme sa na nábytok na mieru, zákazkovú prácu s drevom a profesionálne tesárske služby na Slovensku. Získajte kvalitné remeslo s JK Tesármi." />
+    <meta property="og:title" content="JK CARPENTERS - Nábytkárske práce, interiérový dizajn na Slovensku" />
+    <meta property="og:description" content="Špecializujeme sa na nábytok na mieru a profesionálne nábytkárske práce na Slovensku. Získajte kvalitné remeslo s JK Carpenters." />
     <meta property="og:url" content="https://jk-carpenters.sk/" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="{{ asset('/img/logo.jpg') }}" />
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="JK CARPENTERS - Odborné tesárske služby">
-    <meta name="twitter:description" content="Nábytok na mieru, tesárske práce a odborné remeslo na Slovensku od JK Tesárov.">
+    <meta name="twitter:title" content="JK CARPENTERS - Nábytkárske práce, interiérový dizajn">
+    <meta name="twitter:description" content="Nábytok na mieru, nábytkárske práce a odborné remeslo na Slovensku od JK Carpenters.">
     <meta name="twitter:image" content="{{ asset('/img/logo.jpg') }}">
 
     <!-- Structured Data -->
@@ -27,14 +27,27 @@
         {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          "name": "JK CARPENTERS",
-          "description": "Odborné tesárske služby vrátane nábytku na mieru a práce s drevom na Slovensku.",
+          "name": "JK CARPENTERS s.r.o",
+          "description": "Nábytkárske práce, interiérový dizajn vrátane nábytku na mieru.",
           "url": "https://jk-carpenters.sk/",
           "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Slovensko"
+            "streetAddress": "Dunajský Klátov 625",
+            "addressLocality": "Dunajský Klátov",
+            "postalCode": "930 21",
+            "addressCountry": "Slovakia"
           },
-          "telephone": "+421-123-456-789"
+          "identifier": "50 249 011",
+          "taxID": "2120244995",
+          "registrationNumber": "OR OS Trnava, odd. s.r.o, vložka č. 37438/T",
+          "branch": {
+            "@type": "PostalAddress",
+            "streetAddress": "PPD Trhové Mýto, Dolnobarská 407",
+            "addressLocality": "Trhová Hradská",
+            "postalCode": "930 13",
+            "addressCountry": "Slovakia"
+          },
+          "telephone": ["+421 905 989 008", "+421 905 704 980"]
         }
     </script>
 

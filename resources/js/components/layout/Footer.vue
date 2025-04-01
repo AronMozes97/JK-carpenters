@@ -43,7 +43,7 @@
                 <div>
                     <p>{{ $t('businessInfo.label.office') }}: </p>
                     <p>
-                        IPPD Trhové Mýto,
+                        PPD Trhové Mýto,
                         <br>
                         Dolnobarská 407 | 930 13
                         <br>

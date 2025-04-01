@@ -5,9 +5,13 @@
     <div class="contacts pc">
         <div class="map">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d667.6152868711371!2d17.741751605269535!3d47.98547454254093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476b7586721adbd3%3A0x65e62887f385185d!2zUE9ESUVMTsONQ0tFIFBPxL1OT0hPU1BPRMOBUlNLRSBEUlXFvVNUVk8!5e0!3m2!1ssk!2ssk!4v1728149335749!5m2!1ssk!2ssk"
-                width="570" height="590" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                width="600"
+                height="450"
+                style="border:0;"
+                loading="lazy"
+                allowfullscreen
+                :src="mapSrc">
+            </iframe>
         </div>
         <div class="info">
             <h1>{{ $t('businessInfo.contact') }}</h1>
@@ -60,7 +64,7 @@
 export default {
     data() {
         return {
-            mapSrc: "https://www.google.com/maps/embed/v1/place?key=AIzaSyBYvoVnxPh0C78Od1NfHXOieyFV7UD1t6c&q=47.98589380112105,17.741456051044178"
+            mapSrc: "https://www.google.com/maps/embed/v1/place?key=AIzaSyBYvoVnxPh0C78Od1NfHXOieyFV7UD1t6c&q=JK Carpenters s.r.o.,Dolnobarská cesta 407, 93010 Trhová Hradská"
         };
     }
 };
@@ -68,12 +72,13 @@ export default {
 <style scoped>
 .contacts {
     position: relative;
-    height: 90dvh;
+    height: fit-content;
     background-color: #f8f5f2;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .contacts.mobile {
@@ -97,7 +102,7 @@ export default {
 }
 
 .info.mobile {
-    padding-top: 10px;
+    padding: 10px;
 }
 
 .info p.label {

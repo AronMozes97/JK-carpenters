@@ -54,14 +54,14 @@
         "aboutUs": {
             "section1": {
                 "title": "O nás...",
-                "description1": "Naša spoločnosť sa viac ako 25 rokov venuje výrobe a montáži nábytku. Naším cieľom je vytvoriť nábytok na mieru, ktorý dokonale vyhovuje potrebám zákazníka, jeho každodenným návykom a špecifickým rozmerom a možnostiam jeho domova, pričom dbáme na harmóniu medzi praktickosťou a dizajnom. Náš kreatívny a skúsený tím sa nebojí realizovať vaše predstavy.",
-                "description2": "Spolupracujeme s najlepšími výrobcami nábytkového kovania, ako sú Blum, Häfele, Kesseböhmer...",
-                "description3": "Sme spoľahlivým partnerom pre architektov, interiérové štúdiá a dodávateľov."
+                "description1": "<b>25 rokov skúseností a vývoja</b><br> naša spoločnosť už viac ako 25 rokov vyrába a inštaluje nábytok podľa najvyšších profesionálnych štandardov. V priebehu rokov sme sa neustále vyvíjali, aby sme držali krok s výzvami modernej doby, pričom sme si zachovali záväzok kvality a spoľahlivosti. Naším cieľom je spojiť vaše predstavy s praktickými a estetickými riešeniami a vytvoriť nábytok, ktorý dokonale zapadne do vášho domova a vášho životného štýlu.",
+                "description2": "<b>Harmónia nápadov a funkčnosti.</b><br> Spolupracujeme s najlepšími výrobcami nábytkového kovania, ako sú Blum, Häfele a Kessebömer, aby sme mohli dodávať odolný, inovatívny a funkčný nábytok. Najmodernejšie technológie a starostlivé remeselné spracovanie idú pre nás ruka v ruke, pretože veríme, že starostlivá práca a inovatívne nápady spoločne vytvárajú trvalú hodnotu.",
+                "description3": "<b>Dôveryhodný partner v oblasti dizajnu a konštrukcie.</b><br> Sme otvorení novým príležitostiam a každej úlohy sa ujmeme s cieľom poskytnúť to najlepšie z hľadiska profesionality, kreativity a neustáleho zlepšovania. Ak hľadáte nábytok, ktorý odráža harmóniu odbornosti, inovácie a kvality, u nás nájdete to, čo hľadáte."
             },
             "section2": {
                 "title": "",
-                "description1": "Máme kreatívny a skúsený tím, ktorý sa nebojí realizovať vaše predstavy. Sme otvorení novým nápadom a vďaka moderným technológiám vyrábame vysokokvalitný nábytok, ktorý vydrží generácie.",
-                "description2": "Spolupracujeme s interiérovými štúdiami, pre ktoré vyrábame nábytok na mieru. Sme spoľahlivým partnerom pre architektov a interiérových dodávateľov."
+                "description1": "",
+                "description2": ""
             }
         },
         "morePictures": {

@@ -54,14 +54,14 @@
         "aboutUs": {
             "section1": {
                 "title": "Rólunk...",
-                "description1": "Cégünk több mint 25 éve foglalkozik bútorok gyártásával és beszerelésével. Célunk hogy a praktikum és a design harmóniáját szem előtt tartva, létrehozzunk egy olyan egyedi bútort, ami tökéletesen illeszkedik a megrendelő igényeihez, hétköznapi szokásaihoz, valamint lakásának sajátos méreteihez, lehetőségeihez. Kreatív és tapasztalt csapatunk\nnem riad vissza az Ön igényeinek megvalósításától.",
-                "description2": "A legjob bútorvasalat gyártókkal dolgozunk, mint a Blum, Häfele, Kesseböhmer...",
-                "description3": "Megbízható partnere vagyunk építészeknek és belsőépítészeti stúdióknak, kivitelezőknek."
+                "description1": "<b>25 éves tapasztalat és fejlődés</b><br>  Cégünk több mint 25 éve készít bútorokat és végzi azok beszerelését, mindig a legmagasabb szakmai színvonalon. Az évek alatt folyamatosan fejlődtünk, hogy lépést tartsunk a modern kor igényeivel, miközben megőriztük a minőség és a megbízhatóság iránti elkötelezettségünket. Célunk az, hogy az Ön elképzeléseit ötvözzük praktikus és esztétikus megoldásokkal, olyan bútorokat alkotva, amelyek tökéletesen illeszkednek otthona adottságaihoz és az Ön életstílusához.",
+                "description2": "<b>Ötletek és funkcionalitás harmóniája</b><br>  Tapasztalt csapatunk kreatív szemlélettel és progresszív hozzáállással közelíti meg mindent projektjét. A legkiválóbb bútorvasalat-gyártókkal – mint a Blum, Häfele és Kessebömer – dolgozunk együtt, hogy tartós, innovatív és jól működő bútorokat kínáljunk. A korszerű technológiák és az alapos kivitelezés nálunk kéz a kézben jár, mert hisszük, hogy a gondos munka és az előremutató ötletek együtt teremtenek maradandó értéket.",
+                "description3": "<b>Megbízható társ a tervezésben és kivitelezésben</b><br> Építészek, belsőépítész stúdiók és kivitelezők számára megbízható partnerek vagyunk, akik számíthatnak a szakértelmünkre, pontosságunkra és kreatív problémamegoldásunkra. Nyitottak vagyunk az új lehetőségekre, és mindent feladatot azzal a céllal vállalunk, hogy a professzionalizmus, a kreativitás és a folyamatos fejlődés jegyében a legjobbat nyújtsuk. Ha olyan bútorokat keres, amelyek a szaktudás, az innováció és a minőség harmóniáját tükrözik, nálunk megtalálja, amit keres."
             },
             "section2": {
                 "title": "",
-                "description1": "Kreatív és tapasztalt csapatunk van, amely nem riad vissza az Ön igényeinek megvalósításától. Nyitottak vagyunk az új ötletekre, és modern technológiák segítségével olyan magas minőségű bútorokat készítünk, amelyek generációkat érnek meg.",
-                "description2": "Belsőépítészeti stúdiókkal működünk együtt, akiknek egyedi bútorokat gyártunk. Megbízható partnere vagyunk építészeknek és belsőépítési kivitelezőknek."
+                "description1": "",
+                "description2": ""
             }
         },
         "morePictures": {
